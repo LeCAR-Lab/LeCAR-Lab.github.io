@@ -14,6 +14,11 @@
         rel="stylesheet">    
     <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        :root {
+            --highlight-color: rgba(255, 249, 196, 0.8)
+        }
+    </style>
 </head>
 
 
@@ -51,7 +56,9 @@
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
         <td width="100%" valign="middle">
-            <p> Check out the <a href="https://scholar.google.com/citations?user=joR1Z4UAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> page for a full and up-to-date publication list. <sup>*</sup> denotes equal contribution.
+            <p> 
+                <!-- Check out the <a href="https://scholar.google.com/citations?user=joR1Z4UAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> page for a full and up-to-date publication list.  -->
+                <sup>*</sup> denotes equal contribution and <sup>&dagger;</sup> denotes equal advising. Representative papers are <span style="background-color: var(--highlight-color)">highlighted</span>.
             </p>
         </td>
     </tr>
@@ -71,7 +78,52 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_AnyCar.gif' width="85%">
+                <img src='publications/2024_MPPI_uncertainty.png' width="95%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Agile Mobility with Rapid Online Adaptation via Meta-Learning and Uncertainty-Aware MPPI</papertitle>
+            <br>
+            Dvij Kalaria, Haoru Xue, Wenli Xiao, Tony Tao, Guanya Shi, John Dolan
+            <br>
+            <a href="https://arxiv.org/abs/2410.06565" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://sites.google.com/view/meta-learning-model-adaptation" target="_blank"><i class="fas fa-globe"></i> website</a> 
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Meta-learn a vehicle dynamics model ensemble and use uncertainty-aware MPPI for control.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_SSML-AC.png' width="62%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Self-Supervised Meta-Learning for All-Layer DNN-Based Adaptive Control with Stability Guarantees</papertitle>
+            <br>
+            Guanqi He, Yogita Choudhary, Guanya Shi
+            <br>
+            <a href="https://arxiv.org/abs/2410.07575" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://sites.google.com/view/ssml-ac-project" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/SSML-AC/tree/main" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Pretrain a residual dynamics DNN using meta-learning and fine-tune the whole DNN online using adaptive control with stability guarantees.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_AnyCar.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -91,10 +143,10 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_DIAL-MPC.gif' width="85%">
+                <img src='publications/2024_DIAL-MPC.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -114,10 +166,10 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_JumpingCoD.gif' width="85%">
+                <img src='publications/2024_JumpingCoD.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -149,7 +201,32 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_flying_calligrapher.gif' width="85%">
+                <img src='publications/2024_MBD.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Model-Based Diffusion for Trajectory Optimization</papertitle>
+            <br>
+            Chaoyi Pan<sup>*</sup>, Zeji Yi<sup>*</sup>, Guanya Shi<sup>&dagger;</sup>, Guannan Qu<sup>&dagger;</sup>
+            <br>
+            <em>Neural Information Processing Systems (NeurIPS)</em>, 2024
+            <br>
+            <a href="https://drive.google.com/file/d/1kPjD79Cfr9spWulWNVFMRHqTE-mjbGAp/view?usp=sharing" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://lecar-lab.github.io/mbd/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/model-based-diffusion" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: MBD is a diffusion-based traj optimization method that directly computes the score function using models without any external data. 
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_flying_calligrapher.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -171,35 +248,10 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_MBD.gif' width="85%">
-            </div>
-        </td>
-        <td style="width:65%; vertical-align:middle">
-            <papertitle>Model-Based Diffusion for Trajectory Optimization</papertitle>
-            <br>
-            Chaoyi Pan<sup>*</sup>, Zeji Yi<sup>*</sup>, Guanya Shi, Guannan Qu
-            <br>
-            <em>Neural Information Processing Systems (NeurIPS)</em>, 2024
-            <br>
-            <a href="https://drive.google.com/file/d/1kPjD79Cfr9spWulWNVFMRHqTE-mjbGAp/view?usp=sharing" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
-            <a href="https://lecar-lab.github.io/mbd/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
-            <a href="https://github.com/LeCAR-Lab/model-based-diffusion" target="_blank"><i class="fas fa-code"></i> code</a>
-            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: MBD is a diffusion-based traj optimization method that directly computes the score function using models without any external data. 
-            </p>
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <div class="image-container">
-                <img src='assets/OmniH2O.gif' width="85%">
+                <img src='assets/OmniH2O.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -226,7 +278,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='assets/WoCoCo.gif' width="85%">
+                <img src='assets/WoCoCo.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -251,7 +303,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='assets/H2O.gif' width="85%">
+                <img src='assets/H2O.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -274,10 +326,10 @@
     <br>  
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='assets/abs.gif' width="85%">
+                <img src='assets/abs.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -304,7 +356,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_offroad.gif' width="85%">
+                <img src='publications/2024_offroad.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -328,7 +380,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_DPO-IK.png' width="85%">
+                <img src='publications/2024_DPO-IK.png' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -351,13 +403,13 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_CoVO-MPC.gif' width="85%">
+                <img src='publications/2024_CoVO-MPC.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
             <papertitle>CoVO-MPC: Theoretical Analysis of Sampling-based MPC and Optimal Covariance Design</papertitle>
             <br>
-            Zeji Yi<sup>*</sup>, Chaoyi Pan<sup>*</sup>, Guanqi He, Guannan Qu, Guanya Shi
+            Zeji Yi<sup>*</sup>, Chaoyi Pan<sup>*</sup>, Guanqi He, Guannan Qu<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
             <br>
             <em>Conference on Learning for Dynamics and Control (L4DC)</em>, 2024
             <br>
@@ -376,7 +428,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_HMAC.png ' width="85%">
+                <img src='publications/2024_HMAC.png ' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -400,7 +452,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_SafeDPA.gif' width="85%">
+                <img src='publications/2024_SafeDPA.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -425,7 +477,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_DMPO.png' width="85%">
+                <img src='publications/2024_DMPO.png' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -450,7 +502,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_aerial_interaction.gif' width="85%">
+                <img src='publications/2024_aerial_interaction.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -474,7 +526,7 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2024_gyf.gif' width="85%">
+                <img src='publications/2024_gyf.gif' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -506,10 +558,10 @@
     </table>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2023_optimal_exploration.png' width="85%">
+                <img src='publications/2023_optimal_exploration.png' width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -552,7 +604,7 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
                 <img src='publications/2023_datt.gif' width="62%">
@@ -634,9 +686,9 @@
     </table>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <img src='publications/2022_neural_fly.gif' width="100%">
+            <img src='publications/2022_neural_fly.gif' width="90%">
         </td>
         <td style="width:65%; vertical-align:middle">
             <papertitle>Neural-Fly Enables Rapid Learning for Agile Flight in Strong Winds</papertitle>
@@ -763,10 +815,10 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src="publications/2021_OMAC.gif" width="100%">
+                <img src="publications/2021_OMAC.gif" width="90%">
             </div>
         </td>
         <td style="width:65%; vertical-align:middle">
@@ -813,9 +865,9 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <img src='publications/2021_neural_swarm.gif' width="100%">
+            <img src='publications/2021_neural_swarm.gif' width="90%">
         </td>
         <td style="width:65%; vertical-align:middle">
             <papertitle>Neural-Swarm2: Planning and Control of Heterogeneous Multirotor Swarms Using Learned Interactions</papertitle>
@@ -892,7 +944,7 @@
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <img src='publications/2020_mpc.png' width="100%">
         </td>
@@ -971,9 +1023,9 @@
     </table>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
+    <tr style="background-color: var(--highlight-color)">
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <img src='publications/2019_neural_lander.gif' width="100%">
+            <img src='publications/2019_neural_lander.gif' width="90%">
         </td>
         <td style="width:65%; vertical-align:middle">
             <papertitle>Neural Lander: Stable Drone Landing Control Using Learned Dynamics</papertitle>
@@ -1006,7 +1058,7 @@
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <img src='publications/2018_car_following.png' width="100%">
+            <img src='publications/2018_car_following.png' width="90%">
         </td>
         <td style="width:65%; vertical-align:middle">
             <papertitle>Car-following Method Based on Inverse Reinforcement Learning for Autonomous Vehicle Decision-making</papertitle>
