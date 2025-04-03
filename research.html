@@ -59,27 +59,593 @@
         <ul>
             <li>2024 Oct: CMU RI Seminar Talk "Building Generalist Robots with Agility via Learning and Control: Humanoids and Beyond" (one hour) [<a href="https://youtu.be/Uym3Tr6t5TM?si=dJWQgO-mxbUlIwoQ" target="_blank"><i class="fas fa-globe"></i> recording</a>] [<a href="https://drive.google.com/file/d/18vldRta6Fp-tWPpft37OZO61EkED4Mh8/view?usp=sharing" target="_blank"><i class="far fa-file"></i> slides</a>]</li>
             <li>2024 Sep: Georgia Tech IRIM Seminar Talk "Unifying Semantic and Physical Intelligence for Generalist Humanoid Robots" (one hour) [<a href="https://mediaspace.gatech.edu/media/1_tckra9zz" target="_blank"><i class="fas fa-globe"></i> recording</a>]</li>
-            <li>2023 Sep: New faculty lighting talk at CMU SCS (5 mins) [<a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank"><i class="fas fa-globe"></i> recording</a>]</li> 
+            <!-- <li>2023 Sep: New faculty lighting talk at CMU SCS (5 mins) [<a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank"><i class="fas fa-globe"></i> recording</a>]</li>  -->
         </ul>
         </td>
     </tr>
     </table>
-   
+
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
         <td width="100%" valign="middle">
-            <p> 
-                This page is a bit outdated. Will update soon!
+            <heading>Learning and Control for Humanoid Locomotion and Loco-Manipulation</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='assets/OmniH2O.gif' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Humanoid robots offer two unparalleled advantages in general-purpose embodied intelligence. First, humanoids are built as generalist robots that can potentially do all the tasks humans can do in complex environments. Second, the embodiment alignment between humans and humanoids allows for the seamless integration of human cognitive skills with versatile humanoid capabilities, making humanoids the most promising physical embodiment for AI. 
+            </p>
+            <p>Humanoid control in a whole-body manner is challenging, due to its high degrees of freedom and contact-rich nature (see this <a href="https://arxiv.org/abs/2501.02116" target="_blank">survey</a>). We aim to develop learning-based whole-body control methods for humanoid locomotion and loco-manipulation problems, enabling humanoids to interact with the physical world, adapt quickly to many tasks and environments, and integrate with high-level decision-making layers such as VLMs.
             </p>
         </td>
     </tr>
     </table>
 
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+    
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='assets/ASAP.gif' width="95%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills</papertitle>
+            <br>
+            Tairan He<sup>*</sup>, Jiawei Gao<sup>*</sup>, Wenli Xiao<sup>*</sup>, Yuanhang Zhang<sup>*</sup>, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbab, Chaoyi Pan, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi "Jim" Fan, Yuke Zhu, Changliu Liu, Guanya Shi
+            <br>
+            <a href="https://arxiv.org/abs/2502.01143" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://agile.human2humanoid.com/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/ASAP" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ASAP learns agile whole-body humanoid motions via learning a residual action model from the real world to align sim and real physics.
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='assets/OmniH2O.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning</papertitle>
+            <br>
+            Tairan He<sup>*</sup>, Zhengyi Luo<sup>*</sup>, Xialin He<sup>*</sup>, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2406.08858" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://omni.human2humanoid.com/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://cmu.box.com/s/kmayzq5ax2rxvwn97s0hzz0aq5vws9io" target="_blank"><i class="fas fa-database"></i> dataset</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/human2humanoid" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp
+            <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: OmniH2O provides a universal whole-body humanoid control interface that enables diverse teleoperation and autonomy methods.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='assets/WoCoCo.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>WoCoCo: Learning Whole-Body Humanoid Control with Sequential Contacts</papertitle>
+            <br>
+            Chong Zhang<sup>*</sup>, Wenli Xiao<sup>*</sup>, Tairan He, Guanya Shi
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2024
+            <p style="color: orange; margin: 0px 0;">(Oral Presentation)</p>
+            <a href="https://arxiv.org/abs/2406.06005" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://lecar-lab.github.io/wococo/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: WoCoCo is a task-agnostic skill learning framework without any motion priors, by decomposing long-horizon tasks into contact sequences.
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Improve Offline Learned Policies via Online Adaptation</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='research/adaptive.png' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Offline learned policies for robotic control have shown great success in the robot learning community. For example, learning manipulation policies from demonstrations using imitation learning with generative models; learning locomotion policies in simulation using sim2real reinforcement learning. However, those policies are frozen in test time, and cannot efficiently adapt to new environments or tasks. We aim to develop methods that can effectively learn "adaptable" representation from offline data and efficiently adapt in real time.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <img src='publications/2022_neural_fly.gif' width="90%">
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Neural-Fly Enables Rapid Learning for Agile Flight in Strong Winds</papertitle>
+            <br>
+            Michael O'Connell<sup>*</sup>, Guanya Shi<sup>*</sup>, Xichen Shi, Kamyar Azizzadenesheli, Animashree Anandkumar, Yisong Yue, Soon-Jo Chung
+            <br>
+            <em>Science Robotics</em>
+            <br>
+            <a href="https://arxiv.org/abs/2205.06908" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://youtu.be/TuF9teCZX0U" target="_blank"><i class="fas fa-video"></i> video</a> &nbsp
+            <a href="https://www.caltech.edu/about/news/rapid-adaptation-of-deep-learning-teaches-drones-to-survive-any-weather" target="_blank"><i class="fas fa-newspaper"></i> Caltech news</a> &nbsp
+            <a href="https://youtu.be/R1S5BnKgJxs" target="_blank"><i class="fas fa-newspaper"></i> Reuters</a> &nbsp
+            <a href="https://www.cnn.com/videos/business/2022/05/31/caltech-neural-fly-drones-in-strong-wind-orig-ht.cnn-business/video/playlists/business-tech/" target="_blank"><i class="fas fa-newspaper"></i> CNN</a> &nbsp
+            <a href="https://github.com/aerorobotics/neural-fly" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Neural-Fly uses adaptive control to online fine-tune a meta-pretrained DNN representation, enabling rapid adaptation in strong winds. 
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2023_datt.gif' width="62%">
+                <img src='publications/2023_datt.png' width="38%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>DATT: Deep Adaptive Trajectory Tracking for Quadrotor Control</papertitle>
+            <br>
+            Kevin Huang, Rwik Rana, Alexander Spitzer, Guanya Shi, Byron Boots
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2023
+            <p style="color: orange; margin: 0px 0;">(Oral presentation, 6.6%)</p>
+            <a href="https://openreview.net/pdf?id=XEw-cnNsr6" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://sites.google.com/view/deep-adaptive-traj-tracking" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/KevinHuang8/DATT" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: DATT can precisely track arbitrary, potentially infeasible trajectories in the presence of large disturbances.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_AnyCar.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>AnyCar to Anywhere: Learning Universal Dynamics Model for Agile and Adaptive Mobility</papertitle>
+            <br>
+            Wenli Xiao<sup>*</sup>, Haoru Xue<sup>*</sup>, Tony Tao, Dvij Kalaria, John M. Dolan, Guanya Shi
+            <br>
+            <em>Intertional Conference on Robotics and Automation (ICRA)</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2409.15783" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://lecar-lab.github.io/anycar/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/anycar" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp
+            <a href="https://spectrum.ieee.org/video-friday-mobile-robot-upgrades" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: AnyCar is a transformer-based dynamics model that can adapt to various vehicles, environments, state estimators, and tasks.
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Real2Sim2Real Reinforcement Learning</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='assets/ASAP.gif' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Sim2real Reinforcement Learning (RL) has become the dominant method for many locomotion problems, especially for humanoids, legged robots, drones, and ground vehicles. However, the large sim2real gap, tedious reward tuning, and the lack of diversity hinder its applications in other problems such as loco-manipulation and dexterous manipulation. We aim to address these limitations via enhancing the simulation training environment using real-world data, which is often referred to as <em>real2sim2real</em>.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='assets/ASAP.gif' width="95%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills</papertitle>
+            <br>
+            Tairan He<sup>*</sup>, Jiawei Gao<sup>*</sup>, Wenli Xiao<sup>*</sup>, Yuanhang Zhang<sup>*</sup>, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbab, Chaoyi Pan, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi "Jim" Fan, Yuke Zhu, Changliu Liu, Guanya Shi
+            <br>
+            <a href="https://arxiv.org/abs/2502.01143" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://agile.human2humanoid.com/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/ASAP" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ASAP learns agile whole-body humanoid motions via learning a residual action model from the real world to align sim and real physics.
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Model-Based RL, World Model, and Sampling-Based Optimal Control</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='publications/2024_DIAL-MPC.gif' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Model-based RL (MBRL) first learns a dynamics model (or a "world" model) and then generates a policy via planning/optimization, policy learning, or search. The most compelling part of MBRL is that the learned model is <em>task-agnostic</em>. We are interested in all aspects of MBRL, including model learning, theoretical framework, and planning using optimal control. In particular, recently, we have developed new sampling-based optimal control frameworks that enable efficient online decision-making. 
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_DIAL-MPC.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing</papertitle>
+            <br>
+            Haoru Xue<sup>*</sup>, Chaoyi Pan<sup>*</sup>, Zeji Yi, Guannan Qu, Guanya Shi
+            <br>
+            <em>Intertional Conference on Robotics and Automation (ICRA)</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2409.15610" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://lecar-lab.github.io/dial-mpc/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/dial-mpc" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: DIAL-MPC is the first training-free method achieving real-time whole-body torque control using full-order dynamics.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2025_TDMPC_Square.gif' width="95%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>TD-M(PC)<sup>2</sup>: Improving Temporal Difference MPC Through Policy Constraint</papertitle>
+            <br>
+            Haotian Lin, Pengcheng Wang, Jeff Schneider, Guanya Shi
+            <br>
+            <a href="https://arxiv.org/abs/2502.03550v1" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://darthutopian.github.io/tdmpc_square/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/DarthUtopian/tdmpc_square_public" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: We observe the value overestimation issue in planner-based MBRL and propose a policy constraint solution with SOTA performance.
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2023_optimal_exploration.png' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Optimal Exploration for Model-based RL in Nonlinear Systems</papertitle>
+            <br>
+            Andrew Wagenmaker, Guanya Shi, Kevin Jamieson
+            <br>
+            <em>Neural Information Processing Systems (NeurIPS)</em>, 2023
+            <p style="color: orange; margin: 0px 0;">(Spotlight, 3.1%)</p>
+            <a href="https://arxiv.org/abs/2306.09210" target="_blank"><i class="far fa-file"></i> paper</a> 
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Not all model parameters are equally important. We develop an instance-optimal exploration algorithm for MBRL in nonlinear systems.
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Algorithmic and Theoretical Foundations for “Computational Control”</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='publications/2024_MBD.gif' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Compared to learning-based methods, one problem of traditional control methods is that their performance cannot effectively scale up with the amount of data and parallel computing. Our focus is around a new concept called <em>computational control</em>, i.e., control methods that can effectively scale up with the amount of data and parallel computing. Examples include sampling-based optimal control and generative-model-based policy learning. The goal is to systematically understand, analyze, and enhance computational control methods and apply them to robotics. One of recent interests is to understand how diffusion/flow-based methods work in decision-making problems.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_MBD.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Model-Based Diffusion for Trajectory Optimization</papertitle>
+            <br>
+            Chaoyi Pan<sup>*</sup>, Zeji Yi<sup>*</sup>, Guanya Shi<sup>&dagger;</sup>, Guannan Qu<sup>&dagger;</sup>
+            <br>
+            <em>Neural Information Processing Systems (NeurIPS)</em>, 2024
+            <br>
+            <a href="https://drive.google.com/file/d/1kPjD79Cfr9spWulWNVFMRHqTE-mjbGAp/view?usp=sharing" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://lecar-lab.github.io/mbd/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/model-based-diffusion" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: MBD is a diffusion-based traj optimization method that directly computes the score function using models without any external data. 
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Embodied Intelligence in the Air: General-purpose Aerial Manipulation</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='publications/2024_flying_calligrapher.gif' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>To some extent, existing works on aerial manipulation primarily focus on the aerial perspective, rather than the general-purpose manipulation perspective. The goal is to study aerial manipulation from the embodied intelligence perspective, building general hardware platforms and control methods. Similar to humanoids, we aim to solve the whole-body control problem for aerial manipulation. We are also interested in designing the high-level policy via vision-language-action (VLA) models or imitation learning. 
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_flying_calligrapher.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Flying Calligrapher: Contact-Aware Motion and Force Planning and Control for Aerial Manipulation</papertitle>
+            <br>
+            Xiaofeng Guo<sup>*</sup>, Guanqi He<sup>*</sup>, Jiahe Xu, Mohammadreza Mousaei, Junyi Geng, Sebastian Scherer, Guanya Shi
+            <br>
+            <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2407.05587" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://xiaofeng-guo.github.io/flying-calligrapher/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://spectrum.ieee.org/video-friday-unitree-talks-robots" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Flying calligrapher enables precise hybrid motion and contact force control for an aerial manipulator in various drawing tasks.              
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_aerial_interaction.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Aerial Interaction with Tactile Sensing</papertitle>
+            <br>
+            Xiaofeng Guo, Guanqi He, Mohammadreza Mousaei, Junyi Geng, Guanya Shi, Sebastian Scherer
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2024
+            <br>            
+            <a href="https://arxiv.org/abs/2310.00142" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://sites.google.com/view/aerial-system-gelsight" target="_blank"><i class="fas fa-globe"></i> website</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: We introduce a new aerial manipulation system that leverages tactile feedback for accurate contact force control and texture detection.
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Structured Reinforcement Learning and Control with Guarantees</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:100%; vertical-align:middle">
+            <div class="image-container">
+                <img src='research/structured.png' width="35%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+            <p>Most RL algorithms are general for all tasks. In contrast, drastically different control methods are developed for different systems/tasks, and their successes highly rely on structures inside these systems/tasks. We seek to encode these structures and algorithmic principles into black-box RL algorithms, to make RL algorithms more data-efficient, robust, interpretable, and safe. Examples include hierarchical RL and optimal control methods, learning safety filter for RL policies, and learning-based nonlinear control with stability guarantees.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='assets/abs.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion</papertitle>
+            <br>
+            Tairan He<sup>*</sup>, Chong Zhang<sup>*</sup>, Wenli Xiao, Guanqi He, Changliu Liu, Guanya Shi 
+            <br>
+            <em>Robotics: Science and Systems (RSS)</em>, 2024
+            <p style="color: orange; margin: 0px 0;">(Outstanding Student Paper Award Finalist)</p>
+            <a href="https://arxiv.org/abs/2401.17583" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://agile-but-safe.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp 
+            <a href="https://github.com/LeCAR-Lab/ABS" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp 
+            <a href="https://spectrum.ieee.org/video-friday-agile-but-safe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a> &nbsp
+            <a href="https://www.ri.cmu.edu/collision-free-high-speed-robots/" target="_blank"><i class="fas fa-newspaper"></i> CMU News</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ABS enables fully onboard, agile (>3m/s), and collision-free locomotion for quadrupedal robots in cluttered environments.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_JumpingCoD.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Agile Continuous Jumping in Discontinuous Terrains</papertitle>
+            <br>
+            Yuxiang Yang, Guanya Shi, Changyi Lin, Xiangyun Meng, Rosario Scalise, Mateo Guaman Castro, Wenhao Yu, Tingnan Zhang, Ding Zhao, Jie Tan, Byron Boots
+            <br>
+            <em>Intertional Conference on Robotics and Automation (ICRA)</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2409.10923" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://yxyang.github.io/jumping_cod/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/yxyang/jumping_cod" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Continuous, agile, and autonomous quadrupedal jumping via hierarchical model-free RL and model-based control.           
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2024_SSML-AC.png' width="62%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Self-Supervised Meta-Learning for All-Layer DNN-Based Adaptive Control with Stability Guarantees</papertitle>
+            <br>
+            Guanqi He, Yogita Choudhary, Guanya Shi
+            <br>
+            <em>Intertional Conference on Robotics and Automation (ICRA)</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2410.07575" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://sites.google.com/view/ssml-ac-project" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/SSML-AC/tree/main" target="_blank"><i class="fas fa-code"></i> code</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Pretrain a residual dynamics DNN using meta-learning and fine-tune the whole DNN online using adaptive control with stability guarantees.
+            </p>
+        </td>
+    </tr>
+    </table>
+    </details>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
+
+
+<!--     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
         <td width="100%" valign="middle">
             <heading>Safe Learning-based Nonlinear Control with Learned Robotic Agility</heading>
@@ -100,7 +666,7 @@
     </tr>
     </table>
 
-    <br>
+    <br> 
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
@@ -192,10 +758,4 @@
     </tr>
     </table>
 
-    <br>
-    <br>
-    <br>
-
-</body>
-
-</html>
+-->
