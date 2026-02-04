@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         :root {
-            --highlight-color: rgba(255, 249, 196, 0.79)
+            --highlight-color: rgba(255, 249, 196, 0.)
         }
     </style>
 </head>
@@ -57,8 +57,8 @@
     <tr>
         <td width="100%" valign="middle">
             <p> 
-                <!-- Check out the <a href="https://scholar.google.com/citations?user=joR1Z4UAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> page for a full and up-to-date publication list.  -->
-                <sup>*</sup> denotes equal contribution and <sup>&dagger;</sup> denotes equal advising. Representative papers are <span style="background-color: var(--highlight-color)">highlighted</span>.
+                <sup>*</sup> denotes equal contribution and <sup>&dagger;</sup> denotes equal advising. Below are selected papers. The full publication list is <a href="https://scholar.google.com/citations?hl=en&user=joR1Z4UAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">here</a>.
+                <!-- Representative papers are <span style="background-color: var(--highlight-color)">highlighted</span>. -->
             </p>
         </td>
     </tr>
@@ -73,6 +73,27 @@
         </td>
     </tr>
     </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2026_RPL.gif' width="100%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>RPL: Learning Robust Humanoid Perceptive Locomotion on Challenging Terrains</papertitle>
+            <br>
+            Yuanhang Zhang, Younggyo Seo, Juyue Chen, Yifu Yuan, Koushil Sreenath, Pieter Abbeel<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, Karen Liu<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+            <br>
+            <a href="https://arxiv.org/abs/2602.03002" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://rpl-humanoid.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: A single policy trained by RPL enables multi-directional robust humanoid locomotion over various challenging terrains.
+        </td>
+    </tr>
+    </table>
+
+    <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
@@ -164,28 +185,6 @@
     <tr>
         <td style="width:35%; vertical-align:middle; padding-right: 20px;">
             <div class="image-container">
-                <img src='publications/2025_TWIST2.gif' width="90%">
-            </div>
-        </td>
-        <td style="width:65%; vertical-align:middle">
-            <papertitle>TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System</papertitle>
-            <br>
-            Yanjie Ze, Siheng Zhao, Weizhuo Wang, Angjoo Kanazawa<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, Jiajun Wu<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>
-            <br>
-            <a href="https://arxiv.org/abs/2511.02832" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
-            <a href="https://yanjieze.com/TWIST2/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
-            <a href="https://github.com/amazon-far/TWIST2" target="_blank"><i class="fas fa-code"></i> code</a> 
-            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: TWIST2 is a portable whole-body humanoid teleoperation system that enables scalable data collection.
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <div class="image-container">
                 <img src='publications/2025_ResMimic.gif' width="90%">
             </div>
         </td>
@@ -197,70 +196,6 @@
             <a href="https://www.arxiv.org/abs/2510.05070" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
             <a href="https://resmimic.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> 
             <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: A two-stage humanoid skill learning framework that learns a residual policy on top of a pre-trained general motion tracking policy.
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr style="background-color: var(--highlight-color)">
-        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <div class="image-container">
-                <img src='publications/2025_EADP.gif' width="90%">
-            </div>
-        </td>
-        <td style="width:65%; vertical-align:middle">
-            <papertitle>UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies</papertitle>
-            <br>
-            Harsh Gupta, Xiaofeng Guo, Huy Ha, Chuer Pan, Muqing Cao, Dongjae Lee, Sebastian Sherer, Shuran Song, Guanya Shi
-            <br>
-            <a href="https://arxiv.org/abs/2510.02614" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
-            <a href="https://umi-on-air.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
-            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: EADP steers UMI's embodiment-agnostic diffusion policy using the gradient of the low-level controller's tracking cost for cross-embodiment.
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <div class="image-container">
-                <img src='publications/2025_ResFiT.gif' width="90%">
-            </div>
-        </td>
-        <td style="width:65%; vertical-align:middle">
-            <papertitle>Residual Off-Policy RL for Finetuning Behavior Cloning Policies</papertitle>
-            <br>
-            Lars Ankile, Zhenyu Jiang, Rocky Duan, Guanya Shi, Pieter Abbeel, Anusha Nagabandi
-            <br>
-            <a href="https://arxiv.org/abs/2509.19301" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
-            <a href="https://residual-offpolicy-rl.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> 
-            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ResFiT is a sample-efficient residual RL method that performs real-world RL directly on a wheeled humanoid with two dex hands.
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr style="background-color: var(--highlight-color)">
-        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
-            <div class="image-container">
-                <img src='publications/2025_OmniRetarget.gif' width="90%">
-            </div>
-        </td>
-        <td style="width:65%; vertical-align:middle">
-            <papertitle>OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction</papertitle>
-            <br>
-            Lujie Yang<sup>*</sup>, Xiaoyu Huang<sup>*</sup>, Zhen Wu<sup>*</sup>, Angjoo Kanazawa<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
-            <br>
-            <a href="https://arxiv.org/abs/2509.26633" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
-            <a href="https://omniretarget.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
-            <a href="https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset" target="_blank"><i class="fas fa-database"></i> dataset</a> 
-            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: High-quality interaction-preserving motion reference generation that enables agile whole-body skills with minimal RL tracking.
         </td>
     </tr>
     </table>
@@ -319,6 +254,100 @@
         </td>
     </tr>
     </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2025_EADP.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies</papertitle>
+            <br>
+            Harsh Gupta, Xiaofeng Guo, Huy Ha, Chuer Pan, Muqing Cao, Dongjae Lee, Sebastian Sherer, Shuran Song, Guanya Shi
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2510.02614" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://umi-on-air.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: EADP steers UMI's embodiment-agnostic diffusion policy using the gradient of the low-level controller's tracking cost for cross-embodiment.
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2025_ResFiT.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>Residual Off-Policy RL for Finetuning Behavior Cloning Policies</papertitle>
+            <br>
+            Lars Ankile, Zhenyu Jiang, Rocky Duan, Guanya Shi, Pieter Abbeel, Anusha Nagabandi
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2509.19301" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://residual-offpolicy-rl.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> 
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ResFiT is a sample-efficient residual RL method that performs real-world RL directly on a wheeled humanoid with two dex hands.
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2025_OmniRetarget.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction</papertitle>
+            <br>
+            Lujie Yang<sup>*</sup>, Xiaoyu Huang<sup>*</sup>, Zhen Wu<sup>*</sup>, Angjoo Kanazawa<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2509.26633" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://omniretarget.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset" target="_blank"><i class="fas fa-database"></i> dataset</a> 
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: High-quality interaction-preserving motion reference generation that enables agile whole-body skills with minimal RL tracking.
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='publications/2025_TWIST2.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System</papertitle>
+            <br>
+            Yanjie Ze, Siheng Zhao, Weizhuo Wang, Angjoo Kanazawa<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, Jiajun Wu<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2511.02832" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://yanjieze.com/TWIST2/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://github.com/amazon-far/TWIST2" target="_blank"><i class="fas fa-code"></i> code</a> 
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: TWIST2 is a portable whole-body humanoid teleoperation system that enables scalable data collection.
+        </td>
+    </tr>
+    </table>
+
+    <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr style="background-color: var(--highlight-color)">
@@ -1693,7 +1722,7 @@
     </tr>
     </table>
 
-    <br>
+<!--     <br>
     <br>
 
     <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
@@ -1721,7 +1750,7 @@
             </p>
         </td>
     </tr>
-    </table>
+    </table> -->
 
     <br>
     <br>
