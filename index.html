@@ -12,6 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        // Apply saved theme before paint to avoid a flash of the wrong theme.
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
@@ -22,10 +31,11 @@
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
             <nav class="site-nav">
                 <a href="people.html">People</a>
-                <a href="publications.html">Publication</a>
-                <a href="research.html">Research Topic</a>
+                <a href="publications.html">Publications</a>
+                <a href="research.html">Research Topics</a>
                 <a href="join.html">Join</a>
             </nav>
+            <button type="button" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </div>
     </header>
 
@@ -81,7 +91,7 @@
             <li>2023-09-26: Check out Guanya's 5-min <a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank">new faculty lighting talk</a> at CMU SCS.</li>
             <li>2023-09-21: Two papers (one spotlight) accepted to NeurIPS 2023.</li>
             <li>2023-08-30: Two papers (one oral) accepted to CoRL 2023.</li>
-            <li>2023-08-17: Our <a href="index.html">website</a> is avaliable.</li>
+            <li>2023-08-17: Our <a href="index.html">website</a> is available.</li>
             </ul>
             </details>
         </section>
@@ -95,6 +105,7 @@
             <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+    <script src="theme.js"></script>
 </body>
 
 </html>

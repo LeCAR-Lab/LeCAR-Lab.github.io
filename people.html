@@ -11,6 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        // Apply saved theme before paint to avoid a flash of the wrong theme.
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
@@ -21,10 +30,11 @@
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
             <nav class="site-nav">
                 <a href="people.html" class="active">People</a>
-                <a href="publications.html">Publication</a>
-                <a href="research.html">Research Topic</a>
+                <a href="publications.html">Publications</a>
+                <a href="research.html">Research Topics</a>
                 <a href="join.html">Join</a>
             </nav>
+            <button type="button" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </div>
     </header>
 
@@ -56,7 +66,7 @@
                     <div class="person-links">
                         <a href="https://etaoxing.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
                         <a href="mailto:etaoxing@cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.twitter.com/etaoxing" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/etaoxing" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="person">
@@ -112,7 +122,7 @@
                     <p class="person-name">Wenli Xiao</p>
                     <p class="person-role">RI PhD (Fall 2025)</p>
                     <div class="person-links">
-                        <a href="https://www.wenlixiao.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="https://wenlixiao.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
                         <a href="mailto:wxiao2@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
                         <a href="https://x.com/_wenlixiao" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
@@ -274,12 +284,12 @@
                     <td>PhD at Tsinghua IIIS from 2025</td>
                 </tr>
                 <tr>
-                    <td><a href="https://www.wenlixiao.com/" target="_blank">Wenli Xiao</a></td>
+                    <td><a href="https://wenlixiao.com/" target="_blank">Wenli Xiao</a></td>
                     <td>CMU MSR (2025)</td>
                     <td>PhD at CMU RI from 2025</td>
                 </tr>
                 <tr>
-                    <td><a href="https://dvij5420.netlify.app/" target="_blank">Dvij Kalaria</a></td>
+                    <td><a href="https://dvij542.github.io/" target="_blank">Dvij Kalaria</a></td>
                     <td>CMU MSR (2024)</td>
                     <td>PhD at UC Berkeley from 2024</td>
                 </tr>
@@ -289,7 +299,7 @@
                     <td>PhD at UC Berkeley from 2024</td>
                 </tr>
                 <tr>
-                    <td><a href="https://rwik2000.github.io/" target="_blank">Rwik Rana</a></td>
+                    <td><a href="https://rwik2000.com/" target="_blank">Rwik Rana</a></td>
                     <td>University of Washington MS (2023)</td>
                     <td>PhD at UT Austin from 2023</td>
                 </tr>
@@ -333,7 +343,7 @@
                     <td>MS at CMU MSR from 2025</td>
                 </tr>
                 <tr>
-                    <td><a href="https://operator22th.github.io/" target="_blank">Shaofeng Yin</a></td>
+                    <td><a href="https://scholar.google.com/citations?user=lpKyrxAAAAAJ&hl=en" target="_blank">Shaofeng Yin</a></td>
                     <td>Visiting Undergrad (2024)</td>
                     <td>PhD at UC Berkeley from 2026</td>
                 </tr>
@@ -368,6 +378,7 @@
             <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+    <script src="theme.js"></script>
 </body>
 
 </html>

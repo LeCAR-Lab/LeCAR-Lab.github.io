@@ -16,9 +16,57 @@
   --accent-dark: #7c1222;
   --link: #1660a8;
   --award: #c25e00;
-  --highlight-color: transparent;  /* reserved for featured publications */
+  --selection: rgba(166, 25, 46, 0.13);
+  --shadow: rgba(33, 32, 29, 0.14);
+  --callout-bg: #fbf3e6;
+  --callout-border: #efdcbc;
   --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: light;
+}
+
+/* Dark palette — applied when the visitor's OS prefers dark and they have
+   not chosen explicitly, or when they pick dark via the toggle. The two
+   selectors are deliberately split so an explicit light choice
+   ([data-theme="light"]) always wins over the OS media query. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16151a;
+    --bg-alt: #201e26;
+    --ink: #ece9e3;
+    --ink-soft: #c2bdb4;
+    --muted: #918b81;
+    --rule: #322f38;
+    --rule-strong: #45414c;
+    --accent: #ff6b7d;
+    --accent-dark: #ff8e9c;
+    --link: #6db3f2;
+    --award: #f0a35a;
+    --selection: rgba(255, 107, 125, 0.22);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --callout-bg: #2a2118;
+    --callout-border: #4a3a23;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #16151a;
+  --bg-alt: #201e26;
+  --ink: #ece9e3;
+  --ink-soft: #c2bdb4;
+  --muted: #918b81;
+  --rule: #322f38;
+  --rule-strong: #45414c;
+  --accent: #ff6b7d;
+  --accent-dark: #ff8e9c;
+  --link: #6db3f2;
+  --award: #f0a35a;
+  --selection: rgba(255, 107, 125, 0.22);
+  --shadow: rgba(0, 0, 0, 0.5);
+  --callout-bg: #2a2118;
+  --callout-border: #4a3a23;
+  color-scheme: dark;
 }
 
 * {
@@ -42,7 +90,7 @@ body {
 }
 
 ::selection {
-  background: rgba(166, 25, 46, 0.13);
+  background: var(--selection);
 }
 
 img,
@@ -120,7 +168,32 @@ section + section {
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 28px;
+  margin-left: auto;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 22px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--rule-strong);
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--ink-soft);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .site-nav a {
@@ -253,7 +326,7 @@ h3 {
 
 .showcase a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(33, 32, 29, 0.14);
+  box-shadow: 0 10px 28px var(--shadow);
 }
 
 .showcase img,
@@ -271,10 +344,6 @@ h3 {
   align-items: center;
   padding: 24px 0;
   border-bottom: 1px solid var(--rule);
-}
-
-.pub.highlight {
-  background: var(--highlight-color);
 }
 
 .pub:last-of-type {
@@ -482,8 +551,8 @@ h3 {
 /* --- Join page ----------------------------------------------------------- */
 
 .callout {
-  background: #fbf3e6;
-  border: 1px solid #efdcbc;
+  background: var(--callout-bg);
+  border: 1px solid var(--callout-border);
   border-left: 4px solid var(--award);
   border-radius: 0 8px 8px 0;
   padding: 13px 18px;
@@ -564,14 +633,24 @@ h3 {
 @media (max-width: 800px) {
   .nav-toggle-label {
     display: block;
+    order: 3;
+    margin-left: 14px;
+  }
+
+  .theme-toggle {
+    order: 2;
+    margin-left: auto;
   }
 
   .site-nav {
+    order: 4;
     display: none;
     flex-basis: 100%;
     flex-direction: column;
+    align-items: stretch;
     gap: 0;
     padding: 6px 0 4px;
+    margin-left: 0;
   }
 
   .nav-toggle:checked ~ .site-nav {

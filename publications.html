@@ -11,11 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        :root {
-            --highlight-color: rgba(255, 249, 196, 0.)
-        }
-    </style>
+    <script>
+        // Apply saved theme before paint to avoid a flash of the wrong theme.
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
@@ -26,17 +30,17 @@
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
             <nav class="site-nav">
                 <a href="people.html">People</a>
-                <a href="publications.html" class="active">Publication</a>
-                <a href="research.html">Research Topic</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="research.html">Research Topics</a>
                 <a href="join.html">Join</a>
             </nav>
+            <button type="button" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </div>
     </header>
 
     <main class="container">
         <p class="pub-note">
             <sup>*</sup> denotes equal contribution and <sup>&dagger;</sup> denotes equal advising. Below are selected papers. The full publication list is <a href="https://scholar.google.com/citations?hl=en&user=joR1Z4UAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">here</a>. Topic-wise selected papers can be found in the <a href="research.html" target="_blank">research topic</a> page.
-            <!-- Representative papers are <span style="background-color: var(--highlight-color)">highlighted</span>. -->
         </p>
 
         <section>
@@ -139,13 +143,13 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_EADP.gif" alt="UMI-on-Air">
                 </div>
                 <div>
                     <p class="pub-title">UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies</p>
-                    <p class="pub-authors">Harsh Gupta, Xiaofeng Guo, Huy Ha, Chuer Pan, Muqing Cao, Dongjae Lee, Sebastian Sherer, Shuran Song, Guanya Shi</p>
+                    <p class="pub-authors">Harsh Gupta, Xiaofeng Guo, Huy Ha, Chuer Pan, Muqing Cao, Dongjae Lee, Sebastian Scherer, Shuran Song, Guanya Shi</p>
                     <p class="pub-venue"><em>International Conference on Robotics and Automation (ICRA)</em>, 2026</p>
                     <p class="pub-links">
                         <a href="https://arxiv.org/abs/2510.02614" target="_blank"><i class="far fa-file"></i> paper</a>
@@ -155,7 +159,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_OmniRetarget.gif" alt="OmniRetarget">
                 </div>
@@ -191,7 +195,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_MIP.jpg" alt="Much Ado About Noising">
                 </div>
@@ -208,7 +212,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_BFM.gif" alt="BFM-Zero">
                 </div>
@@ -225,7 +229,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_PLD.gif" alt="PLD">
                 </div>
@@ -235,13 +239,13 @@
                     <p class="pub-venue"><em>International Conference on Learning Representations (ICLR)</em>, 2026</p>
                     <p class="pub-links">
                         <a href="https://arxiv.org/abs/2511.00091" target="_blank"><i class="far fa-file"></i> paper</a>
-                        <a href="https://www.wenlixiao.com/self-improve-VLA-PLD" target="_blank"><i class="fas fa-globe"></i> website</a>
+                        <a href="https://wenlixiao.com/self-improve-VLA-PLD" target="_blank"><i class="fas fa-globe"></i> website</a>
                     </p>
                     <p class="tldr"><i class="fas fa-comment-dots"></i> TL;DR: Probe, Learn, Distill (PLD): On-policy probing from a base VLA model + off-policy residual RL + distillation for VLA post-training.</p>
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="assets/FALCON.gif" alt="FALCON">
                 </div>
@@ -268,7 +272,7 @@
                     <p class="pub-authors">Haotian Lin, Pengcheng Wang, Jeff Schneider, Guanya Shi</p>
                     <p class="pub-venue"><em>Learning for Dynamics and Control Conference (L4DC)</em>, 2026</p>
                     <p class="pub-links">
-                        <a href="https://arxiv.org/abs/2502.03550v1" target="_blank"><i class="far fa-file"></i> paper</a>
+                        <a href="https://arxiv.org/abs/2502.03550" target="_blank"><i class="far fa-file"></i> paper</a>
                         <a href="https://darthutopian.github.io/tdmpc_square/" target="_blank"><i class="fas fa-globe"></i> website</a>
                         <a href="https://github.com/DarthUtopian/tdmpc_square_public" target="_blank"><i class="fas fa-code"></i> code</a>
                     </p>
@@ -280,7 +284,7 @@
         <section>
             <h2>2025</h2>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_SPIDER.gif" alt="SPIDER">
                 </div>
@@ -331,7 +335,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_SPI_Active.gif" alt="SPI-Active">
                 </div>
@@ -367,13 +371,13 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="assets/ASAP.gif" alt="ASAP">
                 </div>
                 <div>
                     <p class="pub-title">ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills</p>
-                    <p class="pub-authors">Tairan He<sup>*</sup>, Jiawei Gao<sup>*</sup>, Wenli Xiao<sup>*</sup>, Yuanhang Zhang<sup>*</sup>, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbab, Chaoyi Pan, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi "Jim" Fan, Yuke Zhu, Changliu Liu, Guanya Shi</p>
+                    <p class="pub-authors">Tairan He<sup>*</sup>, Jiawei Gao<sup>*</sup>, Wenli Xiao<sup>*</sup>, Yuanhang Zhang<sup>*</sup>, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbabu, Chaoyi Pan, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi "Jim" Fan, Yuke Zhu, Changliu Liu, Guanya Shi</p>
                     <p class="pub-venue"><em>Robotics: Science and Systems (RSS)</em>, 2025</p>
                     <p class="pub-links">
                         <a href="https://arxiv.org/abs/2502.01143" target="_blank"><i class="far fa-file"></i> paper</a>
@@ -384,7 +388,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2025_Flying_Hand.gif" alt="Flying Hand">
                 </div>
@@ -393,14 +397,14 @@
                     <p class="pub-authors">Guanqi He<sup>*</sup>, Xiaofeng Guo<sup>*</sup>, Luyi Tang, Yuanhang Zhang, Mohammadreza Mousaei, Jiahe Xu, Junyi Geng, Sebastian Scherer, Guanya Shi</p>
                     <p class="pub-venue"><em>Robotics: Science and Systems (RSS)</em>, 2025</p>
                     <p class="pub-links">
-                        <a href="https://arxiv.org/abs/2407.05587" target="_blank"><i class="far fa-file"></i> paper</a>
+                        <a href="https://arxiv.org/abs/2504.10334" target="_blank"><i class="far fa-file"></i> paper</a>
                         <a href="https://lecar-lab.github.io/flying_hand/" target="_blank"><i class="fas fa-globe"></i> website</a>
                     </p>
                     <p class="tldr"><i class="fas fa-comment-dots"></i> TL;DR: A general-purpose aerial manipulation framework with an EE-centric interface that bridges whole-body control and policy learning.</p>
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2024_DIAL-MPC.gif" alt="DIAL-MPC">
                 </div>
@@ -418,7 +422,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2024_AnyCar.gif" alt="AnyCar">
                 </div>
@@ -436,7 +440,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2024_JumpingCoD.gif" alt="Jumping CoD">
                 </div>
@@ -474,7 +478,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2024_flying_calligrapher.gif" alt="Flying Calligrapher">
                 </div>
@@ -491,7 +495,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="assets/OmniH2O.gif" alt="OmniH2O">
                 </div>
@@ -547,7 +551,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="assets/abs.gif" alt="Agile But Safe">
                 </div>
@@ -571,7 +575,7 @@
         <section>
             <h2>2023 and Before</h2>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2023_optimal_exploration.png" alt="Optimal Exploration">
                 </div>
@@ -587,7 +591,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2023_datt.gif" alt="DATT" style="width: 62%">
                     <img src="publications/2023_datt.png" alt="DATT diagram" style="width: 38%">
@@ -606,7 +610,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2022_neural_fly.gif" alt="Neural-Fly">
                 </div>
@@ -643,7 +647,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2021_OMAC.gif" alt="Meta-Adaptive Nonlinear Control">
                 </div>
@@ -677,7 +681,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2021_neural_swarm.gif" alt="Neural-Swarm2">
                 </div>
@@ -696,7 +700,7 @@
                 </div>
             </article>
 
-            <article class="pub highlight">
+            <article class="pub">
                 <div class="pub-media">
                     <img src="publications/2019_neural_lander.gif" alt="Neural Lander">
                 </div>
@@ -723,6 +727,7 @@
             <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+    <script src="theme.js"></script>
 </body>
 
 </html>
