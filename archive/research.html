@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=900">
+    <title>Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/icon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Castoro"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic"
+        rel="stylesheet">    
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body>
+    <table width="900" border="0" align="center" cellspacing="0" cellpadding="20">
+        <tr>
+            <td style="width:25%; vertical-align:middle; padding-right: 10px;">
+                <a href="index.html"><img src="../assets/logo.png" height="100"></a>
+            </td>
+    
+            <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 5px;">
+                <a href="people.html" style="font-size: 22px; color:black">People</a>
+            </td>
+    
+            <td style="width:20%; vertical-align:middle; text-align:center; padding-right: 10px;">
+                <a href="publications.html" style="font-size: 22px; color:black">Publication</a>
+            </td>
+    
+            <td style="width:25%; vertical-align:middle; text-align:center; padding-right: 0px;">
+                <a href="research.html" style="font-size: 22px; color:black">Research Topic</a>
+            </td>
+    
+            <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 0px;">
+                <a href="join.html" style="font-size: 22px; color:black">Join</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Research Talks</heading>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" valign="middle">
+        <ul>
+            <li>2026 May: Guest Lecture for Stanford CS224R "Sim2Real Robot Learning: A Holistic Overview" [<a href="https://drive.google.com/file/d/1buggW-9NeNzysDoT5VamK_rfnd0Q84lw/view?usp=sharing" target="_blank"><i class="far fa-file"></i> slides</a>]</li>
+
+            <li>2026 Jan: UCSD CRI Seminar Talk "Humanoid Learning from Human Data with Physics Grounding" [<a href="https://drive.google.com/file/d/1UZlqPraCNpKL1zSngevETnWxz_tv2gnf/view?usp=sharing" target="_blank"><i class="far fa-file"></i> slides</a>]</li>
+
+            <li>2025 Jun: CVPR Robotics 101 Tutorial "From Sim2Real 1.0 to 4.0 for Humanoid Whole-Body Control and Loco-Manipulation" (50 mins) [<a href="https://youtu.be/elY7TTiGUZ8?si=uXhFnRy5nkUepkjB" target="_blank"><i class="fas fa-globe"></i> recording</a>] [<a href="https://drive.google.com/file/d/1h5MxNHFo0e0TCRn9exdrHrPH8TcpjbWy/view?usp=sharing" target="_blank"><i class="far fa-file"></i> slides</a>]</li>
+
+            <li>2024 Oct: CMU RI Seminar Talk "Building Generalist Robots with Agility via Learning and Control: Humanoids and Beyond" (one hour) [<a href="https://youtu.be/Uym3Tr6t5TM?si=dJWQgO-mxbUlIwoQ" target="_blank"><i class="fas fa-globe"></i> recording</a>] [<a href="https://youtu.be/pVTG7809RTg?si=6BnsMqveGO_KIrdn" target="_blank"><i class="fas fa-globe"></i> 2025 April version at ETH Zürich</a>] [<a href="https://drive.google.com/file/d/1iyMGxjK5ID-j-ga3B7sUsqN3erle1ibY/view?usp=sharing" target="_blank"><i class="far fa-file"></i> slides</a>]</li>
+
+            <li>2024 Sep: Georgia Tech IRIM Seminar Talk "Unifying Semantic and Physical Intelligence for Generalist Humanoid Robots" (one hour) [<a href="https://mediaspace.gatech.edu/media/1_tckra9zz" target="_blank"><i class="fas fa-globe"></i> recording</a>]</li>
+            <!-- <li>2023 Sep: New faculty lighting talk at CMU SCS (5 mins) [<a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank"><i class="fas fa-globe"></i> recording</a>]</li>  -->
+        </ul>
+        </td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Humanoid Whole-Body Control and Behavior Foundation Model</heading>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+    
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr style="background-color: var(--highlight-color)">
+        <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+            <div class="image-container">
+                <img src='../assets/OmniH2O.gif' width="90%">
+            </div>
+        </td>
+        <td style="width:65%; vertical-align:middle">
+            <papertitle>OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning</papertitle>
+            <br>
+            Tairan He<sup>*</sup>, Zhengyi Luo<sup>*</sup>, Xialin He<sup>*</sup>, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2406.08858" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+            <a href="https://omni.human2humanoid.com/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+            <a href="https://cmu.box.com/s/kmayzq5ax2rxvwn97s0hzz0aq5vws9io" target="_blank"><i class="fas fa-database"></i> dataset</a> &nbsp
+            <a href="https://github.com/LeCAR-Lab/human2humanoid" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp
+            <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+            <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: OmniH2O provides a universal whole-body humanoid control interface that enables diverse teleoperation and autonomy methods.
+            </p>
+        </td>
+    </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr style="background-color: var(--highlight-color)">
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../publications/2025_BFM.gif' width="90%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>BFM-Zero: A Promptable Behavioral Foundation Model for Humanoid Control Using Unsupervised Reinforcement Learning</papertitle>
+                <br>
+                Yitang Li<sup>*</sup>, Zhengyi Luo<sup>*</sup>, Tonghe Zhang, Cunxi Dai, Anssi Kanervisto, Andrea Tirinzoni, Haoyang Weng, Kris Kitani, Mateusz Guzek, Ahmed Touati, Alessandro Lazaric, Matteo Pirotta<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+                <br>
+                <em>International Conference on Learning Representations (ICLR)</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2511.04131" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://lecar-lab.github.io/BFM-Zero/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                <a href="https://github.com/LeCAR-Lab/BFM-Zero" target="_blank"><i class="fas fa-code"></i> code</a> 
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: BFM-Zero enables zero-shot goal reaching, tracking, and reward optimization (any reward at test time) from one policy.
+            </td>
+        </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr style="background-color: var(--highlight-color)">
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../assets/ASAP.gif' width="95%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills</papertitle>
+                <br>
+                Tairan He<sup>*</sup>, Jiawei Gao<sup>*</sup>, Wenli Xiao<sup>*</sup>, Yuanhang Zhang<sup>*</sup>, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbab, Chaoyi Pan, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi "Jim" Fan, Yuke Zhu, Changliu Liu, Guanya Shi
+                <br>
+                <em>Robotics: Science and Systems (RSS)</em>, 2025            
+                <br>
+                <a href="https://arxiv.org/abs/2502.01143" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://agile.human2humanoid.com/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                <a href="https://github.com/LeCAR-Lab/ASAP" target="_blank"><i class="fas fa-code"></i> code</a>
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ASAP learns agile whole-body humanoid motions via learning a residual action model from the real world to align sim and real physics.
+            </td>
+        </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../publications/2025_TWIST2.gif' width="90%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System</papertitle>
+                <br>
+                Yanjie Ze, Siheng Zhao, Weizhuo Wang, Angjoo Kanazawa<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, Jiajun Wu<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>
+                <br>
+                <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2511.02832" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://yanjieze.com/TWIST2/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                <a href="https://github.com/amazon-far/TWIST2" target="_blank"><i class="fas fa-code"></i> code</a> 
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: TWIST2 is a portable whole-body humanoid teleoperation system that enables scalable data collection.
+            </td>
+        </tr>
+    </table>
+
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="100%" valign="middle">
+            <heading>Humanoid Loco-Manipulation and Scene Interaction</heading>
+        </td>
+    </tr>
+    </table>
+
+    <details style="width: 880px; margin: 0 auto;">
+    <summary style="cursor: pointer; padding: 0px 0;">
+        <papertitle>Selected papers in this topic:</papertitle>
+    </summary>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr style="background-color: var(--highlight-color)">
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../publications/2025_OmniRetarget.gif' width="90%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction</papertitle>
+                <br>
+                Lujie Yang<sup>*</sup>, Xiaoyu Huang<sup>*</sup>, Zhen Wu<sup>*</sup>, Angjoo Kanazawa<sup>&dagger;</sup>, Pieter Abbeel<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+                <br>
+                <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+                <br>
+                <p style="color: orange; margin: 0px 0;">(Best Conference Paper Award)</p>
+                <p style="color: orange; margin: 0px 0;">(Best Paper Award on Robot Manipulation and Locomotion)</p>
+                <a href="https://arxiv.org/abs/2509.26633" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://omniretarget.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                <a href="https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset" target="_blank"><i class="fas fa-database"></i> dataset</a> 
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: High-quality interaction-preserving motion reference generation that enables agile whole-body skills with minimal RL tracking.
+            </td>
+        </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../publications/2026_PHP.gif' width="100%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching</papertitle>
+                <br>
+                Zhen Wu<sup>*</sup>, Xiaoyu Huang<sup>*</sup>, Lujie Yang<sup>*</sup>, Yuanhang Zhang, Xi Chen, Pieter Abbeel<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Angjoo Kanazawa<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, C. Karen Liu<sup>&dagger;</sup>
+                <br>
+                <em>Robotics: Science and Systems (RSS)</em>, 2026            
+                <br>
+                <a href="https://arxiv.org/abs/2602.15827" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://php-parkour.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: PHP enables humanoid robots to autonomously perform long-horizon, vision-based parkour across challenging obstacle courses.
+            </td>
+        </tr>
+    </table>
+    
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr style="background-color: var(--highlight-color)">
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../assets/FALCON.gif' width="95%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation</papertitle>
+                <br>
+                Yuanhang Zhang, Yifu Yuan, Prajwal Gurunath, Tairan He, Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Marcell Vazquez-Chanlatte, Liam Pedersen, Guanya Shi
+                <br>
+                <em>Learning for Dynamics and Control Conference (L4DC)</em>, 2026
+                <br>
+                <p style="color: orange; margin: 0px 0;">(Oral Presentation)</p>
+                <a href="https://arxiv.org/abs/2505.06776" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://lecar-lab.github.io/falcon-humanoid/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                <a href="https://github.com/LeCAR-Lab/FALCON/" target="_blank"><i class="fas fa-code"></i> code</a>
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: FALCON enables various heavy-duty humanoid loco-manipulation tasks via a new dual-agent force-adaptive RL framework.
+            </td>
+        </tr>
+    </table>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                <div class="image-container">
+                    <img src='../publications/2025_VIRAL.gif' width="90%">
+                </div>
+            </td>
+            <td style="width:65%; vertical-align:middle">
+                <papertitle>VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation</papertitle>
+                <br>
+                Tairan He<sup>*</sup>, Zi Wang<sup>*</sup>, Haoru Xue<sup>*</sup>, Qingwei Ben<sup>*</sup>, Zhengyi Luo, Wenli Xiao, Ye Yuan, Xingye Da, Fernando Castañeda, Shankar Sastry, Changliu Liu, Guanya Shi, Linxi Fan<sup>&dagger;</sup>, Yuke Zhu<sup>&dagger;</sup>
+                <br>
+                <em>IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2511.15200" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                <a href="https://viral-humanoid.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: VIRAL investigates the scaling law of visual sim-to-real and finds a recipe to achieve zero-shot, robust, and continuous real-world deployment.
+            </td>
+        </tr>
+    </table>
+    
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Contextual Locomotion</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2026_RPL.gif' width="100%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>RPL: Learning Robust Humanoid Perceptive Locomotion on Challenging Terrains</papertitle>
+                    <br>
+                    Yuanhang Zhang, Younggyo Seo, Juyue Chen, Yifu Yuan, Koushil Sreenath, Pieter Abbeel<sup>&dagger;</sup>, Carmelo Sferrazza<sup>&dagger;</sup>, Karen Liu<sup>&dagger;</sup>, Rocky Duan<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>            
+                    <a href="https://arxiv.org/abs/2602.03002" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://rpl-humanoid.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: A single policy trained by RPL enables multi-directional robust humanoid locomotion over various challenging terrains.
+                </td>
+            </tr>
+        </table>
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../assets/abs.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion</papertitle>
+                    <br>
+                    Tairan He<sup>*</sup>, Chong Zhang<sup>*</sup>, Wenli Xiao, Guanqi He, Changliu Liu, Guanya Shi 
+                    <br>
+                    <em>Robotics: Science and Systems (RSS)</em>, 2024
+                    <p style="color: orange; margin: 0px 0;">(Outstanding Student Paper Award Finalist)</p>
+                    <a href="https://arxiv.org/abs/2401.17583" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://agile-but-safe.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp 
+                    <a href="https://github.com/LeCAR-Lab/ABS" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp 
+                    <a href="https://spectrum.ieee.org/video-friday-agile-but-safe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a> &nbsp
+                    <a href="https://www.ri.cmu.edu/collision-free-high-speed-robots/" target="_blank"><i class="fas fa-newspaper"></i> CMU News</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ABS enables fully onboard, agile (>3m/s), and collision-free locomotion for quadrupedal robots in cluttered environments.
+                    </p>
+                </td>
+            </tr>
+        </table>        
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <video src='../publications/2026_LadderMan.mp4' width="100%" controls autoplay loop muted></video>
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>LadderMan: Learning Humanoid Perceptive Ladder Climbing</papertitle>
+                    <br>
+                    Siheng Zhao, Yuanhang Zhang, Ziqi Lu, Pieter Abbeel, Rocky Duan, Koushil Sreenath, Yue Wang, C. Karen Liu<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>            
+                    <a href="https://arxiv.org/abs/2606.05873" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://ladderman-robot.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/amazon-far/LadderMan" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: LadderMan enables humanoids to climb diverse ladders zero-shot and perform stable manipulation while balancing on the ladder.
+                </td>
+            </tr>
+        </table>
+
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Learning Dexterous Skills from Human Data with Physics Grounding</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>
+    
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_SPIDER.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>SPIDER: Scalable Physics-Informed Dexterous Retargeting</papertitle>
+                    <br>
+                    Chaoyi Pan, Changhao Wang, Haozhi Qi, Zixi Liu, Homanga Bharadhwaj, Akash Sharma, Tingfan Wu<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, Jitendra Malik<sup>&dagger;</sup>, Francois Hogan<sup>&dagger;</sup>
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2511.09484" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://jc-bao.github.io/spider-project/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/jc-bao/spider" target="_blank"><i class="fas fa-code"></i> code</a> 
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: A dynamically feasible, cross-embodiment retargeting framework for both humanoid and dexterous hand. Human → physics → real at scale.
+                </td>
+            </tr>
+        </table>
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <video src='../publications/2026_LUCID.mp4' width="100%" controls autoplay loop muted></video>
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Learning Embodiment-Agnostic Intent Models from Unstructured Human Videos for Scalable Dexterous Robot Skill Acquisition</papertitle>
+                    <br>
+                    Harsh Gupta, Guanya Shi<sup>&dagger;</sup>, Wenzhen Yuan<sup>&dagger;</sup>
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>            
+                    <a href="https://arxiv.org/abs/2606.11628" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://lucid-robot.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: LUCID separates human-video intent from sim-trained control, enabling scalable real-world dexterous manipulation across tasks and embodiments w/o any real robot data.
+                </td>
+            </tr>
+        </table>
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_HDMI.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>HDMI: Learning Interactive Humanoid Whole-Body Control from Human Videos</papertitle>
+                    <br>
+                    Haoyang Weng, Yitang Li, Nikhil Sobanbabu, Zihan Wang, Zhengyi Luo, Tairan He, Deva Ramanan, Guanya Shi
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2509.16757" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://hdmi-humanoid.github.io/#/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/LeCAR-Lab/HDMI" target="_blank"><i class="fas fa-code"></i> code</a> 
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: From human videos, HDMI learns robust humanoid loco-manipulation skills (e.g., opening a door continuously for 67 times). 
+                </td>
+            </tr>
+        </table>        
+        
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Policy Adaptation and Self-Improvement in the Real World</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>
+      
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <img src='../publications/2022_neural_fly.gif' width="90%">
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Neural-Fly Enables Rapid Learning for Agile Flight in Strong Winds</papertitle>
+                    <br>
+                    Michael O'Connell<sup>*</sup>, Guanya Shi<sup>*</sup>, Xichen Shi, Kamyar Azizzadenesheli, Animashree Anandkumar, Yisong Yue, Soon-Jo Chung
+                    <br>
+                    <em>Science Robotics</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2205.06908" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://youtu.be/TuF9teCZX0U" target="_blank"><i class="fas fa-video"></i> video</a> &nbsp
+                    <a href="https://www.caltech.edu/about/news/rapid-adaptation-of-deep-learning-teaches-drones-to-survive-any-weather" target="_blank"><i class="fas fa-newspaper"></i> Caltech news</a> &nbsp
+                    <a href="https://youtu.be/R1S5BnKgJxs" target="_blank"><i class="fas fa-newspaper"></i> Reuters</a> &nbsp
+                    <a href="https://www.cnn.com/videos/business/2022/05/31/caltech-neural-fly-drones-in-strong-wind-orig-ht.cnn-business/video/playlists/business-tech/" target="_blank"><i class="fas fa-newspaper"></i> CNN</a> &nbsp
+                    <a href="https://github.com/aerorobotics/neural-fly" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Neural-Fly uses adaptive control to online fine-tune a meta-pretrained DNN representation, enabling rapid adaptation in strong winds. 
+                    </p>
+                </td>
+            </tr>
+        </table>      
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2024_AnyCar.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>AnyCar to Anywhere: Learning Universal Dynamics Model for Agile and Adaptive Mobility</papertitle>
+                    <br>
+                    Wenli Xiao<sup>*</sup>, Haoru Xue<sup>*</sup>, Tony Tao, Dvij Kalaria, John M. Dolan, Guanya Shi
+                    <br>
+                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2409.15783" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://lecar-lab.github.io/anycar/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/LeCAR-Lab/anycar" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp
+                    <a href="https://spectrum.ieee.org/video-friday-mobile-robot-upgrades" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: AnyCar is a transformer-based dynamics model that can adapt to various vehicles, environments, state estimators, and tasks.
+                    </p>
+                </td>
+            </tr>
+        </table>        
+ 
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_PLD.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Self-Improving Vision-Language-Action Models with Data Generation via Residual RL</papertitle>
+                    <br>
+                    Wenli Xiao<sup>*</sup>, Haotian Lin<sup>*</sup>, Andy Peng, Haoru Xue, Tairan He, Yuqi Xie, Fengyuan Hu, Jimmy Wu, Zhengyi Luo, Linxi "Jim" Fan, Guanya Shi, Yuke Zhu
+                    <br>
+                    <em>International Conference on Learning Representations (ICLR)</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2511.00091" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://www.wenlixiao.com/self-improve-VLA-PLD" target="_blank"><i class="fas fa-globe"></i> website</a> 
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Probe, Learn, Distill (PLD): On-policy probing from a base VLA model + off-policy residual RL + distillation for VLA post-training.
+                </td>
+            </tr>
+        </table>        
+        
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Robot Learning "Science"</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>       
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_MIP.jpg' width="100%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Much Ado About Noising: Dispelling the Myths of Generative Robotic Control</papertitle>
+                    <br>
+                    Chaoyi Pan, Giri Anantharaman, Nai-Chieh Huang, Claire Jin, Daniel Pfrommer, Chenyang Yuan, Frank Permenter, Guannan Qu<sup>&dagger;</sup>, Nicholas Boffi<sup>&dagger;</sup>, Guanya Shi<sup>&dagger;</sup>, Max Simchowitz<sup>&dagger;</sup>
+                    <br>
+                    <em>International Conference on Learning Representations (ICLR)</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2512.01809" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://simchowitzlabpublic.github.io/much-ado-about-noising-project/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/simchowitzlabpublic/much-ado-about-noising" target="_blank"><i class="fas fa-code"></i> code</a> 
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: In most benchmarks, the success of generative policies is NOT from its distributional-learning formulation.
+                </td>
+            </tr>
+        </table>
+
+    </details>    
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Agentic Robot Learning</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>       
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2026_CapX.gif' width="100%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation</papertitle>
+                    <br>
+                    Max Fu<sup>*</sup>, Justin Yu<sup>*</sup>, Karim El-Refai<sup>*</sup>, Ethan Kou<sup>*</sup>, Haoru Xue<sup>*</sup>, Huang Huang, Wenli Xiao, Guanzhi Wang, Fei-Fei Li, Guanya Shi, Jiajun Wu, Shankar Sastry, Yuke Zhu, Ken Goldberg<sup>&dagger;</sup>, Linxi "Jim" Fan<sup>&dagger;</sup>
+                    <br>
+                    <em>arXiv preprint</em>
+                    <br>            
+                    <a href="https://arxiv.org/abs/2603.22435" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://capgym.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/capgym/cap-x" target="_blank"><i class="fas fa-code"></i> code</a> 
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: CaP-X benchmarks and improves embodied coding agents, enabling LMs to write robot-control code that generalizes zero-shot.
+                </td>
+            </tr>
+        </table>
+
+    </details>   
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Sampling-Based Optimal Control, MBRL, and World Model</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>       
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2024_DIAL-MPC.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing</papertitle>
+                    <br>
+                    Haoru Xue<sup>*</sup>, Chaoyi Pan<sup>*</sup>, Zeji Yi, Guannan Qu, Guanya Shi
+                    <br>
+                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2025
+                    <br>
+                    <p style="color: orange; margin: 0px 0;">(Best Paper Award Finalist)</p>
+                    <a href="https://arxiv.org/abs/2409.15610" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://lecar-lab.github.io/dial-mpc/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/LeCAR-Lab/dial-mpc" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: DIAL-MPC is the first training-free method achieving real-time whole-body torque control using full-order dynamics.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_TDMPC_Square.gif' width="95%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>TD-M(PC)<sup>2</sup>: Improving Temporal Difference MPC Through Policy Constraint</papertitle>
+                    <br>
+                    Haotian Lin, Pengcheng Wang, Jeff Schneider, Guanya Shi
+                    <br>
+                    <em>Learning for Dynamics and Control Conference (L4DC)</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2502.03550v1" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://darthutopian.github.io/tdmpc_square/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/DarthUtopian/tdmpc_square_public" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: We observe the value overestimation issue in planner-based MBRL and propose a policy constraint solution with SOTA performance.
+                </td>
+            </tr>
+        </table>
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2024_MBD.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Model-Based Diffusion for Trajectory Optimization</papertitle>
+                    <br>
+                    Chaoyi Pan<sup>*</sup>, Zeji Yi<sup>*</sup>, Guanya Shi<sup>&dagger;</sup>, Guannan Qu<sup>&dagger;</sup>
+                    <br>
+                    <em>Neural Information Processing Systems (NeurIPS)</em>, 2024
+                    <br>
+                    <a href="https://drive.google.com/file/d/1kPjD79Cfr9spWulWNVFMRHqTE-mjbGAp/view?usp=sharing" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://lecar-lab.github.io/mbd/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/LeCAR-Lab/model-based-diffusion" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: MBD is a diffusion-based traj optimization method that directly computes the score function using models without any external data. 
+                    </p>
+                </td>
+            </tr>
+        </table>        
+
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Embodied AI in the Air: General-Purpose Aerial Manipulation</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>              
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2024_flying_calligrapher.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Flying Calligrapher: Contact-Aware Motion and Force Planning and Control for Aerial Manipulation</papertitle>
+                    <br>
+                    Xiaofeng Guo<sup>*</sup>, Guanqi He<sup>*</sup>, Jiahe Xu, Mohammadreza Mousaei, Junyi Geng, Sebastian Scherer, Guanya Shi
+                    <br>
+                    <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2024
+                    <br>
+                    <a href="https://arxiv.org/abs/2407.05587" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://xiaofeng-guo.github.io/flying-calligrapher/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://spectrum.ieee.org/video-friday-unitree-talks-robots" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Flying calligrapher enables precise hybrid motion and contact force control for an aerial manipulator in various drawing tasks.              
+                    </p>
+                </td>
+            </tr>
+        </table>        
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_Flying_Hand.gif' width="95%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Flying Hand: End-Effector-Centric Framework for Versatile Aerial Manipulation Teleoperation and Policy Learning</papertitle>
+                    <br>
+                    Guanqi He<sup>*</sup>, Xiaofeng Guo<sup>*</sup>, Luyi Tang, Yuanhang Zhang, Mohammadreza Mousaei, Jiahe Xu, Junyi Geng, Sebastian Scherer, Guanya Shi
+                    <br>
+                    <em>Robotics: Science and Systems (RSS)</em>, 2025            
+                    <br>
+                    <a href="https://arxiv.org/abs/2407.05587" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://lecar-lab.github.io/flying_hand/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: A general-purpose aerial manipulation framework with an EE-centric interface that bridges whole-body control and policy learning.
+                </td>
+            </tr>
+        </table> 
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2025_EADP.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies</papertitle>
+                    <br>
+                    Harsh Gupta, Xiaofeng Guo, Huy Ha, Chuer Pan, Muqing Cao, Dongjae Lee, Sebastian Sherer, Shuran Song, Guanya Shi
+                    <br>
+                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+                    <br>
+                    <a href="https://arxiv.org/abs/2510.02614" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://umi-on-air.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: EADP steers UMI's embodiment-agnostic diffusion policy using the gradient of the low-level controller's tracking cost for cross-embodiment.
+                </td>
+            </tr>
+        </table>        
+
+    </details>
+
+    <br>
+    <br>
+
+    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="middle">
+                <heading>Structured RL and Control with Safety and Performance Guarantees</heading>
+            </td>
+        </tr>
+    </table>
+    
+    <details style="width: 880px; margin: 0 auto;">
+        <summary style="cursor: pointer; padding: 0px 0;">
+            <papertitle>Selected papers in this topic:</papertitle>
+        </summary>  
+        
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../assets/abs.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion</papertitle>
+                    <br>
+                    Tairan He<sup>*</sup>, Chong Zhang<sup>*</sup>, Wenli Xiao, Guanqi He, Changliu Liu, Guanya Shi 
+                    <br>
+                    <em>Robotics: Science and Systems (RSS)</em>, 2024
+                    <p style="color: orange; margin: 0px 0;">(Outstanding Student Paper Award Finalist)</p>
+                    <a href="https://arxiv.org/abs/2401.17583" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://agile-but-safe.github.io/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp 
+                    <a href="https://github.com/LeCAR-Lab/ABS" target="_blank"><i class="fas fa-code"></i> code</a> &nbsp 
+                    <a href="https://spectrum.ieee.org/video-friday-agile-but-safe" target="_blank"><i class="fas fa-newspaper"></i> IEEE Spectrum</a> &nbsp
+                    <a href="https://www.ri.cmu.edu/collision-free-high-speed-robots/" target="_blank"><i class="fas fa-newspaper"></i> CMU News</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: ABS enables fully onboard, agile (>3m/s), and collision-free locomotion for quadrupedal robots in cluttered environments.
+                    </p>
+                </td>
+            </tr>
+        </table>        
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <div class="image-container">
+                        <img src='../publications/2024_JumpingCoD.gif' width="90%">
+                    </div>
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Agile Continuous Jumping in Discontinuous Terrains</papertitle>
+                    <br>
+                    Yuxiang Yang, Guanya Shi, Changyi Lin, Xiangyun Meng, Rosario Scalise, Mateo Guaman Castro, Wenhao Yu, Tingnan Zhang, Ding Zhao, Jie Tan, Byron Boots
+                    <br>
+                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2409.10923" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://yxyang.github.io/jumping_cod/" target="_blank"><i class="fas fa-globe"></i> website</a> &nbsp
+                    <a href="https://github.com/yxyang/jumping_cod" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Continuous, agile, and autonomous quadrupedal jumping via hierarchical model-free RL and model-based control.           
+                    </p>
+                </td>
+            </tr>
+        </table>        
+
+        <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr style="background-color: var(--highlight-color)">
+                <td style="width:35%; vertical-align:middle; padding-right: 20px;">
+                    <img src='../publications/2019_neural_lander.gif' width="90%">
+                </td>
+                <td style="width:65%; vertical-align:middle">
+                    <papertitle>Neural Lander: Stable Drone Landing Control Using Learned Dynamics</papertitle>
+                    <br>
+                    Guanya Shi<sup>*</sup>, Xichen Shi<sup>*</sup>, Michael O'Connell<sup>*</sup>, Rose Yu, Kamyar Azizzadenesheli, Animashree Anandkumar, Yisong Yue, Soon-Jo Chung
+                    <br>
+                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+                    <br>
+                    <a href="https://arxiv.org/abs/1811.08027" target="_blank"><i class="far fa-file"></i> paper</a> &nbsp
+                    <a href="https://youtu.be/FLLsG0S78ik" target="_blank"><i class="fas fa-video"></i> video</a> &nbsp
+                    <a href="https://www.caltech.edu/about/news/neural-lander-uses-ai-land-drones-smoothly" target="_blank"><i class="fas fa-newspaper"></i> Caltech homepage news</a> &nbsp
+                    <a href="https://github.com/GuanyaShi/neural_lander_sim_1d" target="_blank"><i class="fas fa-code"></i> code</a>
+                    <p style="margin-top: 5px"><i class="fas fa-comment-dots"></i> TL;DR: Spectrally normalized deep learning and nonlinear control enable provably stable agile drone landing.
+                    </p>
+                </td>
+            </tr>
+        </table>        
+
+    </details>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>

@@ -1,801 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=900">
-    <title>People</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>People — LeCAR Lab</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/icon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Castoro"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic"
-        rel="stylesheet">    
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-
 <body>
-    <table width="900" border="0" align="center" cellspacing="0" cellpadding="20">
-        <tr>
-            <td style="width:25%; vertical-align:middle; padding-right: 10px;">
-                <a href="index.html"><img src="assets/logo.png" height="100"></a>
-            </td>
-    
-            <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 5px;">
-                <a href="people.html" style="font-size: 22px; color:black">People</a>
-            </td>
-    
-            <td style="width:20%; vertical-align:middle; text-align:center; padding-right: 10px;">
-                <a href="publications.html" style="font-size: 22px; color:black">Publication</a>
-            </td>
-    
-            <td style="width:25%; vertical-align:middle; text-align:center; padding-right: 0px;">
-                <a href="research.html" style="font-size: 22px; color:black">Research Topic</a>
-            </td>
-    
-            <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 0px;">
-                <a href="join.html" style="font-size: 22px; color:black">Join</a>
-            </td>
-        </tr>
-    </table>
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="index.html"><img src="assets/logo.png" alt="LeCAR Lab — Learning and Control for Agile Robotics Lab"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
+            <nav class="site-nav">
+                <a href="people.html" class="active">People</a>
+                <a href="publications.html">Publication</a>
+                <a href="research.html">Research Topic</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
 
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>Faculty</heading>
-        </td>
-    </tr>
-    </table>
-    
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="25%" valign="middle">
-            <img src="people/Guanya_Commencement.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Guanya Shi</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">Assistant Professor, RI</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">Amazon Scholar</p>
-            <div class="social-icons-small">
-                <a href="http://www.gshi.me/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:guanyas@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://twitter.com/GuanyaShi" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+    <main class="container">
+        <section>
+            <h2>Faculty</h2>
+            <div class="people-grid">
+                <div class="person">
+                    <img src="people/Guanya_Commencement.jpg" alt="Guanya Shi">
+                    <p class="person-name">Guanya Shi</p>
+                    <p class="person-role">Assistant Professor, RI<br>Amazon Scholar</p>
+                    <div class="person-links">
+                        <a href="http://www.gshi.me/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:guanyas@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://twitter.com/GuanyaShi" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-        </td>
-        <td width="25%" valign="middle">
-        </td>
-        <td width="25%" valign="middle">
-        </td>
-        <td width="25%" valign="middle">
-        </td>
-    </tr>
-    </table>
+        </section>
 
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>PhD Students</heading> (year means the year they entered the program)
-        </td>
-    </tr>
-    </table>
-    
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width='25%' valign="middle">
-            <img src="people/Eliot.png" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Eliot Xing</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD (Fall 2022)</p>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">(w/ Guannan Qu)</p> -->
-            <div class="social-icons-small">
-                <a href="https://etaoxing.com/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:etaoxing@cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.twitter.com/etaoxing" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <section>
+            <h2>PhD Students</h2>
+            <p class="section-note">Year means the year they entered the program.</p>
+            <div class="people-grid">
+                <div class="person">
+                    <img src="people/Eliot.png" alt="Eliot Xing">
+                    <p class="person-name">Eliot Xing</p>
+                    <p class="person-role">RI PhD (Fall 2022)</p>
+                    <div class="person-links">
+                        <a href="https://etaoxing.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:etaoxing@cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.twitter.com/etaoxing" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Chaoyi.jpg" alt="Chaoyi Pan">
+                    <p class="person-name">Chaoyi Pan</p>
+                    <p class="person-role">ECE PhD (Fall 2023)</p>
+                    <div class="person-links">
+                        <a href="http://panchaoyi.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:chaoyip@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://twitter.com/ChaoyiPan" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Zeji.jpg" alt="Zeji Yi">
+                    <p class="person-name">Zeji Yi</p>
+                    <p class="person-role">ECE PhD (Fall 2023)</p>
+                    <div class="person-links">
+                        <a href="http://iscoyizj.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:zejiy@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/ZejiYi" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Jin.jpg" alt="Jin Cheng">
+                    <p class="person-name">Jin Cheng</p>
+                    <p class="person-role">ETH Zürich PhD (Fall 2023)</p>
+                    <div class="person-links">
+                        <a href="https://jin-cheng.me/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:jin.cheng@inf.ethz.ch" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/catachiii" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Giri.jpg" alt="Giri Anantharaman">
+                    <p class="person-name">Giri Anantharaman</p>
+                    <p class="person-role">RI PhD (Fall 2024)</p>
+                    <div class="person-links">
+                        <a href="https://www.giriman.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:giria@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Anoushka.jpg" alt="Anoushka Alavilli">
+                    <p class="person-name">Anoushka Alavilli</p>
+                    <p class="person-role">RI PhD (Fall 2024)</p>
+                    <div class="person-links">
+                        <a href="https://www.linkedin.com/in/anoushka-alavilli-89586b178/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:apalavil@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Wenli.jpg" alt="Wenli Xiao">
+                    <p class="person-name">Wenli Xiao</p>
+                    <p class="person-role">RI PhD (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://www.wenlixiao.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:wxiao2@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/_wenlixiao" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Cunxi.png" alt="Cunxi Dai">
+                    <p class="person-name">Cunxi Dai</p>
+                    <p class="person-role">RI PhD (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://cunxid.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:cunxid@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/JimmyDai218776" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-        </td>
+        </section>
 
-        <td width='25%' valign="middle">
-            <img src="people/Chaoyi.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Chaoyi Pan</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">ECE PhD (Fall 2023)</p>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">(w/ Guannan Qu)</p> -->
-            <div class="social-icons-small">
-                <a href="http://panchaoyi.com/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:chaoyip@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://twitter.com/ChaoyiPan" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <section>
+            <h2>Master Students</h2>
+            <p class="section-note">Year means the year they entered the program.</p>
+            <div class="people-grid">
+                <div class="person">
+                    <img src="people/Chaitanya.jpg" alt="Chaitanya Chawla">
+                    <p class="person-name">Chaitanya Chawla</p>
+                    <p class="person-role">RI MSR (Fall 2024)</p>
+                    <div class="person-links">
+                        <a href="https://chaitanya1chawla.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:cchawla@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Tonghe.jpg" alt="Tonghe Zhang">
+                    <p class="person-name">Tonghe Zhang</p>
+                    <p class="person-role">RI MSR (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://tonghe-zhang.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:tonghez@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/TongheZhang01" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Lingxiao.jpg" alt="Lingxiao Guo">
+                    <p class="person-name">Lingxiao Guo</p>
+                    <p class="person-role">RI MSR (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://lingxiao-guo.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:lingxiag@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/Lingxiao234" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Angchen.jpg" alt="Angchen Xie">
+                    <p class="person-name">Angchen Xie</p>
+                    <p class="person-role">RI MSR (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://angchenxie.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:angchenx@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/AngchenXie" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Yutong.jpeg" alt="Yutong Wang">
+                    <p class="person-name">Yutong Wang</p>
+                    <p class="person-role">RI MSR (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://www.linkedin.com/in/yutong-w-957636201/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:yutongw3@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Jia.jpg" alt="Jia Xie">
+                    <p class="person-name">Jia Xie</p>
+                    <p class="person-role">MechE MS (Fall 2025)</p>
+                    <div class="person-links">
+                        <a href="https://github.com/jia-xie" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:jiaxie@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-        </td>
+        </section>
 
-        <td width='25%' valign="middle">
-            <img src="people/Zeji.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Zeji Yi</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">ECE PhD (Fall 2023)</p>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">(w/ Guannan Qu)</p> -->
-            <div class="social-icons-small">
-                <a href="http://iscoyizj.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:zejiy@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/ZejiYi" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <section>
+            <h2>Visitors and Undergrads</h2>
+            <div class="people-grid">
+                <div class="person">
+                    <img src="people/Huanyu.jpg" alt="Huanyu Li">
+                    <p class="person-name">Huanyu Li</p>
+                    <p class="person-role">Visiting Undergrad</p>
+                    <div class="person-links">
+                        <a href="https://li-huanyu.github.io/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:huanyuli@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://twitter.com/imhuanyuli" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Ishayu.jpg" alt="Ishayu Shikhare">
+                    <p class="person-name">Ishayu Shikhare</p>
+                    <p class="person-role">CMU Undergrad</p>
+                    <div class="person-links">
+                        <a href="https://ishayushikhare.com/" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:ishikhar@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="people/Narek.jpg" alt="Narek Harutyunyan">
+                    <p class="person-name">Narek Harutyunyan</p>
+                    <p class="person-role">RISS Visiting Undergrad</p>
+                    <div class="person-links">
+                        <a href="https://scholar.google.com/citations?user=p_RX_zcAAAAJ&hl=en" target="_blank" aria-label="Homepage"><i class="fas fa-home"></i></a>
+                        <a href="mailto:nharutyu@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-        </td>
-
-        <td width='25%' valign="middle">
-            <img src="people/Jin.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Jin Cheng</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">ETH Zürich PhD (Fall 2023)</p>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">(w/ Stelian Coros)</p>       -->
-            <div class="social-icons-small">
-                <a href="https://jin-cheng.me/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:jin.cheng@inf.ethz.ch" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/catachiii" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-    </tr>
-
-    <tr>
-        <td width='25%' valign="middle">
-            <img src="people/Giri.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Giri Anantharaman</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD (Fall 2024)</p>
-            <div class="social-icons-small">
-                <a href="https://www.giriman.com/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:giria@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp</p>      -->
-        </td>
-
-        <td width='25%' valign="middle">
-            <img src="people/Anoushka.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Anoushka Alavilli</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD (Fall 2024)</p>
-            <div class="social-icons-small">
-                <a href="https://www.linkedin.com/in/anoushka-alavilli-89586b178/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:apalavil@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Wenli.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Wenli Xiao</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD (Fall 2025)</p>
-            <!-- <p align="center" style="margin-top: 0; margin-bottom: 0">(w/ John Dolan)</p> -->
-            <div class="social-icons-small">
-                <a href="https://www.wenlixiao.com/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:wxiao2@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/_wenlixiao" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width='25%' valign="middle">
-            <img src="people/Cunxi.png" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Cunxi Dai</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://cunxid.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:cunxid@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/JimmyDai218776" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-            </div>
-        </td>
-    </tr>
-
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>Master Students</heading> (year means the year they entered the program)
-        </td>
-    </tr>
-    </table>
-    
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width='25%' valign="middle">
-            <img src="people/Chaitanya.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Chaitanya Chawla</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI MSR (Fall 2024)</p>
-            <div class="social-icons-small">
-                <a href="https://chaitanya1chawla.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:cchawla@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Tonghe.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Tonghe Zhang</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI MSR (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://tonghe-zhang.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:tonghez@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/TongheZhang01" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Lingxiao.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Lingxiao Guo</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI MSR (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://lingxiao-guo.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:lingxiag@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/Lingxiao234" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Angchen.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Angchen Xie</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI MSR (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://angchenxie.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:angchenx@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://x.com/AngchenXie" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="25%" valign="middle">
-            <img src="people/Yutong.jpeg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Yutong Wang</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI MSR (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://www.linkedin.com/in/yutong-w-957636201/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:yutongw3@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Jia.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Jia Xie</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">MechE MS (Fall 2025)</p>
-            <div class="social-icons-small">
-                <a href="https://github.com/jia-xie" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:jiaxie@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </td>
-
-        <td width="25%" valign="middle">
-        </td>
-        
-        <td width="25%" valign="middle">
-        </td>
-    </tr>
-
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>Visitors and Undergrads</heading>
-        </td>
-    </tr>
-    </table>
-    
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>      
-        <td width="25%" valign="middle">
-            <img src="people/Huanyu.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Huanyu Li</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">Visiting Undergrad</p>
-            <div class="social-icons-small">
-                <a href="https://li-huanyu.github.io/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:huanyuli@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://twitter.com/imhuanyuli" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div> 
-        </td> 
-
-        <td width="25%" valign="middle">
-            <img src="people/Ishayu.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Ishayu Shikhare</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">CMU Undergrad</p>
-            <div class="social-icons-small">
-                <a href="https://ishayushikhare.com/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:ishikhar@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div> 
-        </td>
-
-        <td width="25%" valign="middle">
-            <img src="people/Narek.jpg" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Narek Harutyunyan</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RISS Visiting Undergrad</p>
-            <div class="social-icons-small">
-                <a href="https://scholar.google.com/citations?user=p_RX_zcAAAAJ&hl=en" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:nharutyu@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div> 
-        </td>
-
-        <td width="25%" valign="middle">
-        </td>
-    </tr>
-    </table>
-
-    <br>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>Alumni</heading> (year means the year they left the LeCAR Lab)
-        </td>
-    </tr>
-    </table>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td colspan="3" width="100%" valign="middle">
-            <p style="font-size: 18px; font-weight: 700">Previous PhD students:</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://tairanhe.com/" target="_blank">Tairan He</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU RI PhD (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">MTS, OpenAI</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://xiaofeng-guo.github.io/" target="_blank">Xiaofeng Guo</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU RI PhD (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">MTS, Amazon FAR</p>
-        </td>
-    </tr>
-
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td colspan="3" width="100%" valign="middle">
-            <p style="font-size: 18px; font-weight: 700">Previous MS students:</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://darthutopian.github.io/" target="_blank">Haotian Lin</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UW from 2026</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://hang0610.github.io/" target="_blank">Yuanhang Zhang</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MRSD (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">MTS, Amazon FAR</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://nike353.github.io/" target="_blank">Nikhil Sobanbabu</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU ECE MS (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UT Austin from 2026</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://www.linkedin.com/in/yogita-choudhary-2b48b015a/" target="_blank">Yogita Choudhary</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at Georgia Tech from 2025</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://guanqihe.github.io/" target="_blank">Guanqi He</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at Tsinghua IIIS from 2025</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://www.wenlixiao.com/" target="_blank">Wenli Xiao</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at CMU RI from 2025</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://dvij5420.netlify.app/" target="_blank">Dvij Kalaria</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UC Berkeley from 2024</p>
-        </td>
-    </tr>  
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://haoruxue.github.io/" target="_blank">Haoru Xue</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU MSR (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UC Berkeley from 2024</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://rwik2000.github.io/" target="_blank">Rwik Rana</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">University of Washington MS (2023)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UT Austin from 2023</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="3" width="100%" valign="middle">
-            <p style="font-size: 18px; font-weight: 700">Previous visitors and undergrads:</p>
-        </td>
-    </tr>          
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://dongjaelee95.github.io/" target="_blank">Dongjae Lee</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Postdoc (2026)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Assistant Professor at Kyung Hee University</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://liyitang22.github.io/" target="_blank">Yitang Li</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at Stanford CS from 2026</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://haoyangweng.pages.dev/" target="_blank">Haoyang Weng</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at CMU RI from 2026</p>
-        </td>
-    </tr>
-    
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://hgupt3.github.io/" target="_blank">Harsh Gupta</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2025, RISS program)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">MS at Stanford CS from 2026</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://www.linkedin.com/in/andre-g-gomes/?originalSubdomain=ch" target="_blank">André Gomes</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting MS (2025)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Genesis AI</p>
-        </td>
-    </tr>
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://tony-tao.com/" target="_blank">Tony Tao</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU Undergrad (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UC Berkeley from 2026</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://www.linkedin.com/in/micah-reich/" target="_blank">Micah Reich</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">CMU Undergrad (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">MS at CMU MSR from 2025</p>
-        </td>
-    </tr>     
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://operator22th.github.io/" target="_blank">Shaofeng Yin</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at UC Berkeley from 2026</p>
-        </td>
-    </tr> 
-
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://gao-jiawei.com/" target="_blank">Jiawei Gao</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-        </td>
-    </tr>  
-         
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://z-taylcr7.github.io/" target="_blank">Yichao Zhong</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at HKU from 2025</p>
-        </td>
-    </tr>          
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://zita-ch.github.io/" target="_blank">Chong Zhang</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting MS (2024)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at ETH Zürich from 2025</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="20%" valign="middle">
-            <p style="line-height: 0.2;"><a href="https://ykwang20.github.io/" target="_blank">Yikai Wang</a></p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">Visiting Undergrad (2023)</p>
-        </td>
-
-        <td width="40%" valign="middle">
-            <p style="line-height: 0.2;">PhD at CMU MechE from 2024</p>
-        </td>
-    </tr>
-    </table>
-
-    <!--  
-    <br>
-
-   <table width="880" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>Collaborators</heading>
-        </td>
-    </tr>
-    </table>
-    
-    <table width="880" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="25%" valign="middle">
-            <img src="people/Mohammad.png" width='100%' style="border-radius: 10px">
-            <p align="center" style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 0">Mohammadreza Mousaei</p>
-            <p align="center" style="margin-top: 0; margin-bottom: 0">RI PhD</p>
-            <div class="social-icons-small">
-                <a href="https://www.cs.cmu.edu/~mmousaei/" target="_blank" aria-label="Homepage">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="mailto:mmousaei@andrew.cmu.edu" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://twitter.com/mmousaei77" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </td>
-        
-        <td width="25%" valign="middle">
-        </td>
-
-        <td width="25%" valign="middle">
-        </td>
-        
-        <td width="25%" valign="middle">
-        </td>
-    </tr>
-    </table>
-    -->
-
-    <br>
-    <br>
-    <br>
-
+        </section>
+
+        <section>
+            <h2>Alumni</h2>
+            <p class="section-note">Year means the year they left the LeCAR Lab.</p>
+
+            <h3>Previous PhD students</h3>
+            <table class="alumni">
+                <tr>
+                    <td><a href="https://tairanhe.com/" target="_blank">Tairan He</a></td>
+                    <td>CMU RI PhD (2026)</td>
+                    <td>MTS, OpenAI</td>
+                </tr>
+                <tr>
+                    <td><a href="https://xiaofeng-guo.github.io/" target="_blank">Xiaofeng Guo</a></td>
+                    <td>CMU RI PhD (2026)</td>
+                    <td>MTS, Amazon FAR</td>
+                </tr>
+            </table>
+
+            <h3>Previous MS students</h3>
+            <table class="alumni">
+                <tr>
+                    <td><a href="https://darthutopian.github.io/" target="_blank">Haotian Lin</a></td>
+                    <td>CMU MSR (2026)</td>
+                    <td>PhD at UW from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://hang0610.github.io/" target="_blank">Yuanhang Zhang</a></td>
+                    <td>CMU MRSD (2026)</td>
+                    <td>MTS, Amazon FAR</td>
+                </tr>
+                <tr>
+                    <td><a href="https://nike353.github.io/" target="_blank">Nikhil Sobanbabu</a></td>
+                    <td>CMU ECE MS (2026)</td>
+                    <td>PhD at UT Austin from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.linkedin.com/in/yogita-choudhary-2b48b015a/" target="_blank">Yogita Choudhary</a></td>
+                    <td>CMU MSR (2025)</td>
+                    <td>PhD at Georgia Tech from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://guanqihe.github.io/" target="_blank">Guanqi He</a></td>
+                    <td>CMU MSR (2025)</td>
+                    <td>PhD at Tsinghua IIIS from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.wenlixiao.com/" target="_blank">Wenli Xiao</a></td>
+                    <td>CMU MSR (2025)</td>
+                    <td>PhD at CMU RI from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://dvij5420.netlify.app/" target="_blank">Dvij Kalaria</a></td>
+                    <td>CMU MSR (2024)</td>
+                    <td>PhD at UC Berkeley from 2024</td>
+                </tr>
+                <tr>
+                    <td><a href="https://haoruxue.github.io/" target="_blank">Haoru Xue</a></td>
+                    <td>CMU MSR (2024)</td>
+                    <td>PhD at UC Berkeley from 2024</td>
+                </tr>
+                <tr>
+                    <td><a href="https://rwik2000.github.io/" target="_blank">Rwik Rana</a></td>
+                    <td>University of Washington MS (2023)</td>
+                    <td>PhD at UT Austin from 2023</td>
+                </tr>
+            </table>
+
+            <h3>Previous visitors and undergrads</h3>
+            <table class="alumni">
+                <tr>
+                    <td><a href="https://dongjaelee95.github.io/" target="_blank">Dongjae Lee</a></td>
+                    <td>Visiting Postdoc (2026)</td>
+                    <td>Assistant Professor at Kyung Hee University</td>
+                </tr>
+                <tr>
+                    <td><a href="https://liyitang22.github.io/" target="_blank">Yitang Li</a></td>
+                    <td>Visiting Undergrad (2025)</td>
+                    <td>PhD at Stanford CS from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://haoyangweng.pages.dev/" target="_blank">Haoyang Weng</a></td>
+                    <td>Visiting Undergrad (2025)</td>
+                    <td>PhD at CMU RI from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://hgupt3.github.io/" target="_blank">Harsh Gupta</a></td>
+                    <td>Visiting Undergrad (2025, RISS program)</td>
+                    <td>MS at Stanford CS from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.linkedin.com/in/andre-g-gomes/?originalSubdomain=ch" target="_blank">André Gomes</a></td>
+                    <td>Visiting MS (2025)</td>
+                    <td>Genesis AI</td>
+                </tr>
+                <tr>
+                    <td><a href="https://tony-tao.com/" target="_blank">Tony Tao</a></td>
+                    <td>CMU Undergrad (2024)</td>
+                    <td>PhD at UC Berkeley from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.linkedin.com/in/micah-reich/" target="_blank">Micah Reich</a></td>
+                    <td>CMU Undergrad (2024)</td>
+                    <td>MS at CMU MSR from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://operator22th.github.io/" target="_blank">Shaofeng Yin</a></td>
+                    <td>Visiting Undergrad (2024)</td>
+                    <td>PhD at UC Berkeley from 2026</td>
+                </tr>
+                <tr>
+                    <td><a href="https://gao-jiawei.com/" target="_blank">Jiawei Gao</a></td>
+                    <td>Visiting Undergrad (2024)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="https://z-taylcr7.github.io/" target="_blank">Yichao Zhong</a></td>
+                    <td>Visiting Undergrad (2024)</td>
+                    <td>PhD at HKU from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://zita-ch.github.io/" target="_blank">Chong Zhang</a></td>
+                    <td>Visiting MS (2024)</td>
+                    <td>PhD at ETH Zürich from 2025</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ykwang20.github.io/" target="_blank">Yikai Wang</a></td>
+                    <td>Visiting Undergrad (2023)</td>
+                    <td>PhD at CMU MechE from 2024</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://youtube.com/@LeCARLab" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/LeCARLab" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

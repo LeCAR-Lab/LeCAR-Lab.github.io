@@ -1,110 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=900">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LeCAR Lab at CMU</title>
+    <meta name="description" content="LeCAR (Learning and Control for Agile Robotics) Lab at Carnegie Mellon University. We develop reliable, adaptive, and efficient learning and control methods for generalist robots with agility.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/icon.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Castoro"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic"
-        rel="stylesheet">    
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-
 <body>
-    <table width="900" border="0" align="center" cellspacing="0" cellpadding="20">
-    <tr>
-        <td style="width:25%; vertical-align:middle; padding-right: 10px;">
-            <a href="index.html"><img src="assets/logo.png" height="100"></a>
-        </td>
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="index.html"><img src="assets/logo.png" alt="LeCAR Lab — Learning and Control for Agile Robotics Lab"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
+            <nav class="site-nav">
+                <a href="people.html">People</a>
+                <a href="publications.html">Publication</a>
+                <a href="research.html">Research Topic</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
 
-        <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 5px;">
-            <a href="people.html" style="font-size: 22px; color:black">People</a>
-        </td>
-
-        <td style="width:20%; vertical-align:middle; text-align:center; padding-right: 10px;">
-            <a href="publications.html" style="font-size: 22px; color:black">Publication</a>
-        </td>
-
-        <td style="width:25%; vertical-align:middle; text-align:center; padding-right: 0px;">
-            <a href="research.html" style="font-size: 22px; color:black">Research Topic</a>
-        </td>
-
-        <td style="width:15%; vertical-align:middle; text-align:center; padding-right: 0px;">
-            <a href="join.html" style="font-size: 22px; color:black">Join</a>
-        </td>
-    </tr>
-    </table>
-
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="50%" valign="middle">
-            <a href="https://arxiv.org/abs/2012.05457" target="_blank"><img src='assets/neural_swarm.gif' width='100%'></a>
-        </td>
-        <td width="50%" valign="middle">
-            <a href="https://arxiv.org/abs/2205.06908" target="_blank"><img src='assets/neural_fly.gif' width='100%'></a>
-        </td>
-    </tr>
-    </table>
-
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="50%" valign="middle">
-            <a href="https://wenlixiao.com/self-improve-VLA-PLD" target="_blank"><img src='publications/2025_PLD.gif' width='100%'></a>
-        </td>
-        <td width="50%" valign="middle">
-            <a href="https://agile-but-safe.github.io/" target="_blank"><img src='assets/abs.gif' width='100%'></a>
-        </td>
-    </tr>
-    </table>
-
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="50%" valign="middle">
-            <a href="https://php-parkour.github.io/" target="_blank"><img src='publications/2026_PHP.gif' width='100%'></a>
-        </td>
-        <td width="50%" valign="middle">
-            <a href="https://omni.human2humanoid.com/" target="_blank"><img src='assets/OmniH2O.gif' width='100%'></a>
-        </td>
-    </tr>
-    </table>
-
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="5">
-    <tr>
-        <td width="50%" valign="middle">
-            <a href="https://lecar-lab.github.io/BFM-Zero/" target="_blank"><img src='publications/2025_BFM.gif' width='100%'></a>
-        </td>
-        <td width="50%" valign="middle">
-            <a href="https://umi-on-air.github.io/" target="_blank"><img src='publications/2025_EADP.gif' width='100%'></a>
-        </td>
-    </tr>
-    </table>
-
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <p>
-            Welcome to the LeCAR (Learning and Control for Agile Robotics) lab website! We are affiliated with the <a href="https://www.ri.cmu.edu/" target="_blank">Robotics Institute</a> and the <a href="https://www.cs.cmu.edu/" target="_blank">School of Computer Science</a> at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. We are broadly interested in the intersection of AI, robotics, and control, spanning the entire spectrum from theory and foundations, algorithm design, to real-world general-purpose robotic systems such as humanoids. We develop <em>reliable</em>, <em>adaptive</em>, and <em>efficient</em> learning and control methods for generalist robots with agility. See our <a href="publications.html">publications</a> and <a href="research.html">research topics</a> for more details.
+    <main class="container">
+        <section class="hero">
+            <h1>LeCAR Lab</h1>
+            <p class="hero-tagline">Learning and Control for Agile Robotics</p>
+            <p class="hero-text">
+                Welcome to the LeCAR (Learning and Control for Agile Robotics) lab website! We are affiliated with the <a href="https://www.ri.cmu.edu/" target="_blank">Robotics Institute</a> and the <a href="https://www.cs.cmu.edu/" target="_blank">School of Computer Science</a> at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. We are broadly interested in the intersection of AI, robotics, and control, spanning the entire spectrum from algorithmic foundations to real-world general-purpose robotic systems such as humanoids. We develop <em>reliable</em>, <em>adaptive</em>, and <em>efficient</em> learning and control methods for generalist robots with agility. See our <a href="publications.html">publications</a> and <a href="research.html">research topics</a> for more details.
             </p>
-        </td>
-    </tr>
-    </table>
 
-    <!--
-    <table width="850" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" valign="middle">
-            <heading>News</heading>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%" valign="middle">
+            <div class="showcase">
+                <a href="https://arxiv.org/abs/2012.05457" target="_blank"><img src="assets/neural_swarm.gif" alt="Neural-Swarm"></a>
+                <a href="https://arxiv.org/abs/2205.06908" target="_blank"><img src="assets/neural_fly.gif" alt="Neural-Fly"></a>
+                <a href="https://wenlixiao.com/self-improve-VLA-PLD" target="_blank"><video src="assets/PLD.mp4" controls autoplay loop muted playsinline aria-label="PLD"></video></a>
+                <a href="https://agile-but-safe.github.io/" target="_blank"><img src="assets/abs.gif" alt="Agile But Safe"></a>
+                <a href="https://php-parkour.github.io/" target="_blank"><video src="assets/PHP.mp4" controls autoplay loop muted playsinline aria-label="Perceptive Humanoid Parkour"></video></a>
+                <a href="https://omni.human2humanoid.com/" target="_blank"><img src="assets/OmniH2O.gif" alt="OmniH2O"></a>
+                <a href="https://lecar-lab.github.io/BFM-Zero/" target="_blank"><video src="assets/BFM-Zero.mp4" controls autoplay loop muted playsinline aria-label="BFM-Zero"></video></a>
+                <a href="https://umi-on-air.github.io/" target="_blank"><video src="assets/UMI-on-Air.mp4" controls autoplay loop muted playsinline aria-label="UMI-on-Air"></video></a>
+                <a href="https://capgym.github.io/" target="_blank"><video src="assets/CapX.mp4" controls autoplay loop muted playsinline aria-label="CaP-X"></video></a>
+            </div>
+        </section>
+
+        <!--
+        <section>
+            <h2>News</h2>
             <ul>
             <li>2026-03-01: <a href="https://viral-humanoid.github.io/" target="_blank">VIRAL</a> and <a href="https://doorman-humanoid.github.io/" target="_blank">DoorMan</a> accepted to CVPR 2026.</li>
             <li>2026-01-31: Four papers accepted to ICLR 2026, two to L4DC 2026, and six to ICRA 2026.</li>
@@ -113,15 +61,15 @@
             <li>2025-04-11: <a href="https://agile.human2humanoid.com/" target="_blank">ASAP</a> and <a href="https://xiaofeng-guo.github.io/flying_hand.io/" target="_blank">Flying Hand</a> accepted to RSS 2025.</li>
             <li>2025-02-10: Congratulations to Zeji for receiving the CMU Wei Shen and Xuehong Zhang Presidential Fellowship, and Chaoyi for receiving the Hsu Chang Memorial Fellowship!</li>
             <li>2025-01-30: 8 papers accepted to ICRA 2025 and <a href="https://lecar-lab.github.io/dial-mpc/" target="_blank">DIAL-MPC</a> is a Best Paper Award Finalist!</li>
-            <li>2024-12-18: Congratulations to Tairan for receiving the CMU RI Presidential Fellowship and the <a href="https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2025-2026/" target="_blank">NVIDIA Fellowship</a>!</li>    
+            <li>2024-12-18: Congratulations to Tairan for receiving the CMU RI Presidential Fellowship and the <a href="https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2025-2026/" target="_blank">NVIDIA Fellowship</a>!</li>
             </ul>
 
             <details>
-            <summary>See More</summary></li>
+            <summary>See More</summary>
             <ul>
-            <li>2024-10-15: Guanya gave talks at <a href="https://www.ri.cmu.edu/event/building-generalist-robots-with-agility-via-learning-and-control-humanoids-and-beyond/" target="_blank">CMU RI Seminar</a> and <a href="https://ai.engin.umich.edu/events/2024-ai-symposium/" target="_blank">Michigan AI Symposium</a>. Check out the <a href="https://youtu.be/Uym3Tr6t5TM" target="_blank">recording</a>.</li>    
+            <li>2024-10-15: Guanya gave talks at <a href="https://www.ri.cmu.edu/event/building-generalist-robots-with-agility-via-learning-and-control-humanoids-and-beyond/" target="_blank">CMU RI Seminar</a> and <a href="https://ai.engin.umich.edu/events/2024-ai-symposium/" target="_blank">Michigan AI Symposium</a>. Check out the <a href="https://youtu.be/Uym3Tr6t5TM" target="_blank">recording</a>.</li>
             <li>2024-10-09: <a href="https://mediaspace.gatech.edu/media/1_tckra9zz" target="_blank">Flying Calligrapher</a> accepted to RA-L.</li>
-            <li>2024-09-04: Guanya gave a <a href="https://mediaspace.gatech.edu/media/1_tckra9zz" target="_blank">talk</a> at the <a href="https://research.gatech.edu/robotics/irim-seminar-series" target="_blank">Georgia Tech IRIM Seminar</a>.</li>    
+            <li>2024-09-04: Guanya gave a <a href="https://mediaspace.gatech.edu/media/1_tckra9zz" target="_blank">talk</a> at the <a href="https://research.gatech.edu/robotics/irim-seminar-series" target="_blank">Georgia Tech IRIM Seminar</a>.</li>
             <li>2024-09-04: Two papers accepted to CoRL 2024 and one paper to NeurIPS 2024.</li>
             <li>2024-07-19: <a href="https://agile-but-safe.github.io/" target="_blank">ABS</a> is the Outstanding Student Paper Award Finalist at RSS 2024.</li>
             <li>2024-06-14: <a href="https://omni.human2humanoid.com/" target="_blank">OmniH2O</a> and <a href="https://lecar-lab.github.io/wococo/" target="_blank">WoCoCo</a> are on <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe" target="_blank">Video Friday</a> (weekly selection of robot videos by IEEE Spectrum).
@@ -130,30 +78,23 @@
             <li>2024-03-09: <a href="https://spectrum.ieee.org/video-friday-agile-but-safe" target="_blank">ABS</a> and <a href="https://spectrum.ieee.org/video-friday-human-to-humanoid" target="_blank">H2O</a> are on Video Friday (weekly selection of robot videos by IEEE Spectrum).</li>
             <li>2024-01-29: Four papers accepted to ICRA 2024.</li>
             <li>2024-01-15: Guanya will teach <a href="https://16-831-s24.github.io/" target="_blank">16-831 Introduction to Robot Learning</a> in spring.</li>
-            <li>2023-09-26: Check out Guanya's 5-min <a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank">new faculty lighting talk</a> at CMU SCS.</li> 
+            <li>2023-09-26: Check out Guanya's 5-min <a href="https://youtu.be/1MH-R6_UALw?si=isH5XlHQzg1719jy" target="_blank">new faculty lighting talk</a> at CMU SCS.</li>
             <li>2023-09-21: Two papers (one spotlight) accepted to NeurIPS 2023.</li>
             <li>2023-08-30: Two papers (one oral) accepted to CoRL 2023.</li>
             <li>2023-08-17: Our <a href="index.html">website</a> is avaliable.</li>
             </ul>
             </details>
-        </td>
-    </tr>
-    </table>
-    -->
+        </section>
+        -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://youtube.com/@LeCARLab" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/LeCARLab" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 </body>
-
-<div class="social-icons">
-    <a href="https://youtube.com/@LeCARLab" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-    </a>
-    <a href="https://twitter.com/LeCARLab" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://github.com/LeCAR-Lab" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-</div>
-
-<br>
 
 </html>

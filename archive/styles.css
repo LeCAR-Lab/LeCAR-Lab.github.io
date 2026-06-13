@@ -1,0 +1,93 @@
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+strong {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+papertitle {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+name {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+heading {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+}
+
+papertitle {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+}
+
+.image-container img {
+    max-width: 100%;          /* Ensure the image doesn't exceed its natural width */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    padding: 20px 0; /* Padding at the top and bottom */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 40px; /* Icon size */
+    color: #333; /* Icon color; adjust as needed */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #007BFF; /* Color when the icon is hovered over; adjust as needed */
+}
+
+.social-icons-small {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    padding: 0px 0; /* Padding at the top and bottom */
+}
+
+.social-icons-small a {
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 20px; /* Icon size */
+    color: #333; /* Icon color; adjust as needed */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons-small a:hover {
+    color: #007BFF; /* Color when the icon is hovered over; adjust as needed */
+}
