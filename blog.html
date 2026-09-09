@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog — LeCAR Lab</title>
+    <meta name="description" content="Research notes and perspectives on learning, control, and agile robotics from the LeCAR Lab at Carnegie Mellon University.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" href="assets/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body class="blog-page">
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="index.html"><img src="assets/logo.png" alt="LeCAR Lab — Learning and Control for Agile Robotics Lab"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-nav">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="people.html">People</a>
+                <a href="publications.html">Publications</a>
+                <a href="research.html">Research Topics</a>
+                <a href="join.html">Join</a>
+                <a href="blog.html" class="active" aria-current="page">Blog</a>
+            </nav>
+            <button type="button" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <header class="blog-heading">
+            <h1>Blog</h1>
+            <p class="blog-description">Research notes and perspectives from the LeCAR Lab.</p>
+        </header>
+
+        <section aria-labelledby="year-2026">
+            <h2 id="year-2026">2026</h2>
+            <article class="post-preview">
+                <h3><a href="blog/test/">Test</a></h3>
+                <p class="post-meta"><span><time datetime="2026-09-09">September 9, 2026</time></span><span>LeCAR Lab</span><span>Placeholder post</span></p>
+                <p>A sample research note on learning and control, with equations, figures, expandable notes, and references.</p>
+                <p><a href="blog/test/" aria-label="Read Test">Read post <span aria-hidden="true">→</span></a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://youtube.com/@LeCARLab" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/LeCARLab" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/LeCAR-Lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+/* Blog-only additions. Colors and typography come from styles.css. */
+.blog-page main.container {
+  max-width: 780px;
+}
+
+.blog-page .blog-heading {
+  margin-bottom: 38px;
+}
+
+.blog-page .blog-description,
+.blog-page .post-meta {
+  color: var(--ink-soft);
+}
+
+.blog-page .blog-description {
+  margin: 12px 0 0;
+}
+
+.blog-page .post-preview {
+  padding: 4px 0 28px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.blog-page .post-preview h3 {
+  font-size: 1.55rem;
+  margin: 0 0 8px;
+}
+
+.blog-page .post-preview h3 a {
+  color: var(--ink);
+}
+
+.blog-page .post-preview h3 a:hover {
+  color: var(--accent);
+}
+
+.blog-page .post-meta {
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+.blog-page .post-meta span + span::before {
+  content: " · ";
+  white-space: pre;
+  color: var(--muted);
+}
+
+.blog-page .post-preview p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-page .back-to-blog {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 0.97rem;
+}
+
+.blog-page .post-header {
+  text-align: center;
+  margin: 0 0 34px;
+}
+
+.blog-page .post-header h1 {
+  margin-bottom: 14px;
+}
+
+.blog-page .post-header .post-meta {
+  margin-top: 5px;
+}
+
+.blog-page .post-body {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.blog-page .post-body p {
+  margin: 0 0 20px;
+}
+
+.blog-page .post-body section + section {
+  margin-top: 42px;
+}
+
+.blog-page .placeholder-note {
+  padding: 13px 17px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-alt);
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.blog-page .post-figure {
+  margin: 28px 0;
+}
+
+.blog-page .post-figure img,
+.blog-page .post-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.blog-page .post-figure figcaption {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.blog-page .diagram {
+  background: var(--bg-alt);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.blog-page .diagram .diagram-box {
+  fill: var(--bg);
+  stroke: var(--rule-strong);
+  stroke-width: 1.5;
+}
+
+.blog-page .diagram .diagram-policy {
+  stroke: var(--accent);
+}
+
+.blog-page .diagram .diagram-flow {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.blog-page .diagram .diagram-arrow {
+  fill: var(--accent);
+}
+
+.blog-page .diagram text {
+  fill: currentColor;
+  text-anchor: middle;
+  font-size: 19px;
+}
+
+.blog-page .diagram .diagram-label {
+  fill: var(--ink-soft);
+  font-size: 16px;
+}
+
+.blog-page .equation {
+  position: relative;
+  padding: 10px 35px 10px 0;
+  margin: 22px 0;
+}
+
+.blog-page .equation-math {
+  overflow-x: auto;
+  padding: 3px 0;
+}
+
+.blog-page .equation-number {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
+.blog-page .katex {
+  font-size: 1.08em;
+}
+
+.blog-page .katex-display {
+  margin: 0.65em 0;
+}
+
+.blog-page .post-aside {
+  border-left: 3px solid var(--rule-strong);
+  background: var(--bg-alt);
+  border-radius: 0 6px 6px 0;
+  margin: 24px 0;
+  padding: 12px 17px;
+}
+
+.blog-page .post-aside summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.blog-page .post-aside[open] summary {
+  margin-bottom: 12px;
+}
+
+.blog-page .post-aside p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-page .references {
+  padding-left: 26px;
+  font-size: 0.98rem;
+}
+
+.blog-page .references li {
+  padding-left: 5px;
+  margin-bottom: 18px;
+}
+
+.blog-page .references li::marker {
+  color: var(--accent);
+}
+
+.blog-page .citation {
+  white-space: nowrap;
+}
+
+.blog-page :target {
+  scroll-margin-top: 24px;
+}
+
+.blog-page .references li:target {
+  background: var(--selection);
+}
+
+.blog-page .post-end {
+  border-top: 1px solid var(--rule);
+  margin-top: 36px;
+  padding-top: 22px;
+}
+
+.blog-page :focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 560px) {
+  .blog-page .post-header {
+    margin-bottom: 28px;
+  }
+
+  .blog-page .post-body {
+    font-size: 1.04rem;
+  }
+
+  .blog-page .equation {
+    padding-right: 26px;
+  }
+
+  .blog-page .diagram {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+
+  .blog-page .diagram text {
+    font-size: 36px;
+  }
+
+  .blog-page .diagram .diagram-label {
+    font-size: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.blog-page) {
+    scroll-behavior: auto;
+  }
+
+  .blog-page a {
+    transition: none;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test — LeCAR Lab Blog</title>
+    <meta name="description" content="A placeholder LeCAR Lab research note with example equations, figures, expandable notes, and citations.">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../blog.css">
+    <link rel="icon" href="../../assets/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css" integrity="sha384-JctiRyLzXCrSoOOzFlSoWLdyzQl7OrrRnhyeBmzB6ZWtcjccUyc8lCQJqIbs3uQX" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js" integrity="sha384-+7Keh381hSkXmXqnjC0JBM/kzsN6TFj+wMKychSLjTvJ8/0ElMde2uKl8i6p6Buj" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" onload="renderMathInElement(document.getElementById('post-content'));"></script>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body class="blog-page">
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="../../index.html"><img src="../../assets/logo.png" alt="LeCAR Lab — Learning and Control for Agile Robotics Lab"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-nav">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><i class="fas fa-bars"></i></label>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="../../people.html">People</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../research.html">Research Topics</a>
+                <a href="../../join.html">Join</a>
+                <a href="../../blog.html" class="active" aria-current="page">Blog</a>
+            </nav>
+            <button type="button" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <a class="back-to-blog" href="../../blog.html"><span aria-hidden="true">←</span> All posts</a>
+        <article id="post-content" aria-labelledby="post-title">
+            <header class="post-header">
+                <h1 id="post-title">Test</h1>
+                <p class="post-meta"><a href="../../index.html">LeCAR Lab</a></p>
+                <p class="post-meta"><span><time datetime="2026-09-09">September 9, 2026</time></span><span>Placeholder post</span></p>
+            </header>
+
+            <div class="post-body">
+                <p class="placeholder-note"><strong>A note about this post.</strong> This is a placeholder for future LeCAR Lab blog posts. The examples below illustrate the article format and do not report new research results.</p>
+
+                <p>How can a robot learn from experience while responding to a changing world? Learning and control offer complementary ways to approach this question: a policy can capture patterns in data, while feedback uses new observations to adjust the robot’s actions.</p>
+                <p>In this sample note, we walk through a small learning-and-control example. We introduce a policy, write down its training objective, and connect it to a feedback loop. The equations and figures serve as examples of how a future research story might unfold.</p>
+
+                <section aria-labelledby="setup">
+                    <h2 id="setup">The setup</h2>
+                    <p>Consider a robot with state \(x_t\), observation \(o_t\), and action \(u_t\) at time \(t\). A policy \(\pi_\theta\), parameterized by \(\theta\), maps observations to actions. We can describe the interaction with a simple pair of equations:</p>
+                    <div class="equation" id="eq-dynamics">
+                        <div class="equation-math">\[
+                            \begin{aligned}
+                                u_t &amp;= \pi_\theta(o_t), \\
+                                x_{t+1} &amp;= f(x_t, u_t) + w_t.
+                            \end{aligned}
+                        \]</div>
+                        <a class="equation-number" href="#eq-dynamics" aria-label="Equation 1">(1)</a>
+                    </div>
+                    <p>Here, \(f\) represents the dynamics and \(w_t\) represents an additive disturbance. After each action, the robot receives a new observation and repeats the process.</p>
+
+                    <figure class="post-figure" id="fig-feedback">
+                        <svg class="diagram" viewBox="0 0 660 300" role="img" aria-labelledby="feedback-title feedback-description">
+                            <title id="feedback-title">A simple feedback loop</title>
+                            <desc id="feedback-description">An observation goes to a policy, which sends an action to a robot. A new observation from the robot closes the loop.</desc>
+                            <defs>
+                                <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                                    <path class="diagram-arrow" d="M 0 0 L 10 5 L 0 10 Z"/>
+                                </marker>
+                            </defs>
+                            <rect class="diagram-box" x="30" y="64" width="170" height="88" rx="8"/>
+                            <rect class="diagram-box diagram-policy" x="245" y="64" width="170" height="88" rx="8"/>
+                            <rect class="diagram-box" x="460" y="64" width="170" height="88" rx="8"/>
+                            <text x="115" y="114">Input</text>
+                            <text x="330" y="114">Policy</text>
+                            <text x="545" y="114">Robot</text>
+                            <path class="diagram-flow" d="M 200 108 H 239" marker-end="url(#arrowhead)"/>
+                            <path class="diagram-flow" d="M 415 108 H 454" marker-end="url(#arrowhead)"/>
+                            <text class="diagram-label" x="438" y="48">Action</text>
+                            <path class="diagram-flow" d="M 545 152 V 234 H 115 V 158" marker-end="url(#arrowhead)"/>
+                            <text class="diagram-label" x="330" y="218">New observation</text>
+                        </svg>
+                        <figcaption><strong>Figure 1.</strong> An illustrative feedback loop. The policy acts on an observation, and the next observation closes the loop.</figcaption>
+                    </figure>
+                </section>
+
+                <section aria-labelledby="learning">
+                    <h2 id="learning">Learning from demonstrations</h2>
+                    <p>Suppose we have a dataset \(\mathcal{D}\) of expert observation–action pairs. For a continuous-action policy, an example behavioral cloning objective is the mean squared error between predicted and demonstrated actions:</p>
+                    <div class="equation" id="eq-learning">
+                        <div class="equation-math">\[
+                            \mathcal{L}(\theta) =
+                            \mathbb{E}_{(o,u^*)\sim\mathcal{D}}
+                            \left[\left\|\pi_\theta(o)-u^*\right\|_2^2\right].
+                        \]</div>
+                        <a class="equation-number" href="#eq-learning" aria-label="Equation 2">(2)</a>
+                    </div>
+                    <p><a href="#eq-learning">Equation (2)</a> describes agreement with the demonstrations. A separate question is how the policy behaves when its own actions lead it to observations outside the training data. This distinction motivates work on distribution shift in imitation learning, such as DAgger <a class="citation" id="cite-dagger" href="#ref-dagger" role="doc-biblioref" aria-label="Reference 1: Ross, Gordon, and Bagnell">[1]</a>.</p>
+
+                    <details class="post-aside">
+                        <summary>Why might a small training error be insufficient?</summary>
+                        <p>The dataset describes observations collected by an expert. During deployment, the learned policy influences which observations it will encounter. An early mistake can bring it into an unfamiliar state, where subsequent predictions may be less reliable.</p>
+                        <p>This is a useful place for a longer derivation, an implementation detail, or an additional experiment in a future post.</p>
+                    </details>
+                </section>
+
+                <section aria-labelledby="control">
+                    <h2 id="control">Connecting learning and control</h2>
+                    <p>A controller can also reason about future actions. For example, a finite-horizon objective balances tracking a desired state \(x_k^{\mathrm{ref}}\) against control effort:</p>
+                    <div class="equation" id="eq-control">
+                        <div class="equation-math">\[
+                            J = \sum_{k=0}^{H-1}
+                            \left(\left\|x_k-x_k^{\mathrm{ref}}\right\|_Q^2
+                            + \left\|u_k\right\|_R^2\right).
+                        \]</div>
+                        <a class="equation-number" href="#eq-control" aria-label="Equation 3">(3)</a>
+                    </div>
+                    <p>The horizon is \(H\), and the positive semidefinite matrices \(Q\) and \(R\) set the relative penalties, with \(\|v\|_Q^2 = v^\top Qv\). This objective is illustrative; a complete controller would also specify dynamics, constraints, and an optimization procedure.</p>
+                    <p>For a real example of research connecting learning and agile control, see the lab’s Neural-Fly work <a class="citation" id="cite-neural-fly" href="#ref-neural-fly" role="doc-biblioref" aria-label="Reference 2: Neural-Fly">[2]</a>. The existing lab demonstration below is included as sample media for this post.</p>
+
+                    <figure class="post-figure" id="fig-flight">
+                        <img src="../../assets/neural_fly.gif" alt="Neural-Fly demonstration showing a quadrotor tracking a trajectory in windy conditions." width="480" height="270" loading="lazy" decoding="async">
+                        <figcaption><strong>Figure 2.</strong> An existing Neural-Fly demonstration from the lab’s website <a href="#ref-neural-fly" class="citation" role="doc-biblioref" aria-label="Reference 2">[2]</a>, used here as a placeholder figure. It is separate from the illustrative setup in this post.</figcaption>
+                    </figure>
+
+                    <details class="post-aside">
+                        <summary>What would a full experiment include?</summary>
+                        <p>A future post could describe the task and dataset, compare relevant baselines, specify evaluation conditions, and report variation across runs. Figures would then link each observation to the evidence that supports it.</p>
+                    </details>
+                </section>
+
+                <section aria-labelledby="closing">
+                    <h2 id="closing">Closing thoughts</h2>
+                    <p>This sample starts with a feedback loop, introduces a learning objective, and adds a control objective. Future posts can use the same space to explain a new result, share a practical observation, or work through an open question in robotics.</p>
+                    <p>For the lab’s current work, explore our <a href="../../publications.html">publications</a> and <a href="../../research.html">research topics</a>.</p>
+                </section>
+
+                <section aria-labelledby="references" role="doc-bibliography">
+                    <h2 id="references">References</h2>
+                    <ol class="references">
+                        <li id="ref-dagger">Stéphane Ross, Geoffrey Gordon, and Drew Bagnell. <a href="https://proceedings.mlr.press/v15/ross11a.html">A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning.</a> AISTATS, 2011. <a href="#cite-dagger" aria-label="Back to citation 1">↩</a></li>
+                        <li id="ref-neural-fly">Michael O’Connell, Guanya Shi, Xichen Shi, Kamyar Azizzadenesheli, Anima Anandkumar, Yisong Yue, and Soon-Jo Chung. <a href="https://arxiv.org/abs/2205.06908">Neural-Fly Enables Rapid Learning for Agile Flight in Strong Winds.</a> Science Robotics, 2022. <a href="#cite-neural-fly" aria-label="Back to citation 2">↩</a></li>
+                    </ol>
+                </section>
+            </div>
+
+            <footer class="post-end">
+                <a href="../../blog.html"><span aria-hidden="true">←</span> All posts</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://youtube.com/@LeCARLab" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/LeCARLab" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/LeCAR-Lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="../../theme.js"></script>
+</body>
+
+</html>
